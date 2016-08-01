@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCases>
+   <Test>Row13_VerifyAccessingQDA_URL</Test>
+   <Test>Row14_VerifyLoginWithInvalidUsername</Test>
+   <Test>Row15_VerifyLoginWithInvalidPassword</Test>
+   <Test>Row16_VerifyLoginWithInvalidUsernameAndInvalidPassword</Test>
+   <Test>Row17_VerifyLoginWithEmptyCredentials</Test>
+   <Test>Row18_VerifyLoginWithValidUsernameAndValidPassword</Test>
+   <Test>Row22_VerifyLogoutAndRe_Login</Test>
+</TestCases>

@@ -1,0 +1,2 @@
+INDEX VERSION 1.122+D:\Dold\adtf2\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+403136210.index

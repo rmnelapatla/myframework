@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/OfficeLaptop/d/Ddriver/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="D:/OfficeLaptop/d/Ddriver/lib/testng-6.8.jar"/>
+	<classpathentry kind="lib" path="D:/OfficeLaptop/d/Ddriver/lib/selenium-server-standalone-2.52.0.jar"/>
+	<classpathentry kind="lib" path="D:/OfficeLaptop/d/Ddriver/lib/selenium-java-2.43.1/selenium-2.43.1/selenium-java-2.43.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

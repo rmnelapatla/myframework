@@ -1,0 +1,10 @@
+<CompTypeList>
+<CompType>Window</CompType>
+<CompType>Button</CompType>
+<CompType>TextField</CompType>
+<CompType>Alert</CompType>
+<CompType>Checkbox</CompType>
+<CompType>NA</CompType>
+<CompType>Dropdown</CompType>
+<CompType>RadioButton</CompType>
+</CompTypeList>

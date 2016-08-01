@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Suites>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <Suite name="NOCOUNTY">
+      <urls>http://192.168.60.108:8086</urls>
+      <cats>NoCounty</cats>
+   </Suite>
+   <Suite name="GA13023_NC37117_OK40125">
+      <urls>http://192.168.60.108:8086</urls>
+      <cats>GA13023_NC37117_OK40125</cats>
+   </Suite>
+   <Suite name="VA51065">
+      <urls>http://192.168.60.108:8086</urls>
+      <cats>VA51065</cats>
+   </Suite>
+   <Suite name="WV54015">
+      <urls>http://192.168.60.108:8086</urls>
+      <cats>WV54015</cats>
+   </Suite>
+</Suites>

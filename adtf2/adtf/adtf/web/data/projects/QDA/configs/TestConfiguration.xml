@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestConfiguration>
+   <TestConfig name="WINDOWS_7_FIREFOX_12_LOCALHOST">
+      <hostname>localhost</hostname>
+      <portnumber>4444</portnumber>
+      <browsertype>FIREFOX</browsertype>
+      <platform>WINDOWS_7</platform>
+      <browserversion>12</browserversion>
+   </TestConfig>
+   <TestConfig name="WINDOWS_7_IE_9_LOCALHOST">
+      <hostname>localhost</hostname>
+      <portnumber>4444</portnumber>
+      <browsertype>IE</browsertype>
+      <platform>WINDOWS_7</platform>
+      <browserversion>9</browserversion>
+   </TestConfig>
+</TestConfiguration>

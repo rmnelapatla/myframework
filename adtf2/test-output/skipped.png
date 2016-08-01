@@ -1,0 +1,7 @@
+�ل"</string>
+    <string name="bugreport_message" msgid="398447048750350456">"این گزارش اطلاعات مربوط به وضعیت دستگاه کنونی شما را جمع‌آوری می‌کند تا به صورت یک پیام ایمیل ارسال شود. از زمان شروع گزارش اشکال تا آماده شدن برای ارسال اندکی زمان می‌برد؛ لطفاً شکیبا باشید."</string>
+    <string name="global_action_toggle_silent_mode" msgid="8219525344246810925">"حالت ساکت"</string>
+    <string name="global_action_silent_mode_on_status" msgid="3289841937003758806">"صدا خاموش است"</string>
+    <string name="global_action_silent_mode_off_status" msgid="1506046579177066419">"صدا روشن است"</string>
+    <string name="global_actions_toggle_airplane_mode" msgid="5884330306926307456">"حالت هواپیما"</string>
+    <string name="global_actions_airplane_mode_on_status" msgid="

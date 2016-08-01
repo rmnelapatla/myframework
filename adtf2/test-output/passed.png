@@ -1,0 +1,8 @@
+494019234102154896">"‏حافظه رایانهٔ لوحی پر است! برخی از فایل‎ها را حذف کنید تا فضا آزاد شود."</string>
+    <string name="low_memory" product="watch" msgid="4415914910770005166">"حافظه ساعت پر است. برای آزادسازی فضا، چند فایل را حذف کنید."</string>
+    <string name="low_memory" product="default" msgid="3475999286680000541">"حافظه تلفن پر است. بعضی از فایل‌ها را حذف کنید تا فضا آزاد شود."</string>
+    <string name="ssl_ca_cert_warning" msgid="5848402127455021714">"ممکن است شبکه نظارت شده باشد"</string>
+    <string name="ssl_ca_cert_noti_by_unknown" msgid="4475437862189850602">"توسط یک شخص ثالث ناشناس"</string>
+    <string name="ssl_ca_cert_noti_managed" msgid="4030263497686867141">"توسط <xliff:g id="MANAGING_DOMAIN">%s</xliff:g>"</string>
+    <string name="me" msgid="6545696007631404292">"من"</string>
+    <s

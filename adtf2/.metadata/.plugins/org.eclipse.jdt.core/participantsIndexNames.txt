@@ -1,0 +1,13 @@
+INDEX VERSION 1.126
+D:\Dold\adtf2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\327843792.index
+\adtf\src
+D:\Dold\adtf2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2578443553.index
+\adtf\src
+D:\Dold\adtf2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3279869162.index
+\adtf\src
+D:\Dold\adtf2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3710340872.index
+\adtf\src
+D:\Dold\adtf2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\516963764.index
+\adtf\src
+D:\Dold\adtf2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\67804727.index
+\adtf\src

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCases>
+   <Test>Row1091_Job_Control_Tab_FileInductionJobs_FileInductionJobListScreen</Test>
+   <Test>Row1092_Job_Control_Tab_FileInductionJobs_DateParameterSubmission</Test>
+   <Test>Row1094_ContainsSearch_FileInductionJobs_Jobcontrol</Test>
+   <Test>Row1095_StartsWithSearch_FileInductionJobs_Jobcontrol</Test>
+   <Test>Row1096_ExactSearch_FileInductionJobs_Jobcontrol</Test>
+   <Test>Row1097_SortingFiles_FileInductionJobs_Jobcontrol</Test>
+   <Test>Row1101_Job_Control_Tab_CountyEditionJobs_FipsCodeNotMoreThan5digits</Test>
+</TestCases>

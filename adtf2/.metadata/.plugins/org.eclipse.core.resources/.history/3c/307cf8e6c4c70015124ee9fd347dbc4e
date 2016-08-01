@@ -1,0 +1,380 @@
+package automation.scripts;
+
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.apache.log4j.Logger;
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import com.adaequare.testng.adtf.testng.beans.TestSteps;
+
+public class SeleniumXMLParser {
+
+	DocumentBuilderFactory documentBuilderFactory;
+	DocumentBuilder builder;
+	Document document;
+
+	public Logger logger = Logger.getRootLogger();
+
+	public SeleniumXMLParser() {
+		documentBuilderFactory = DocumentBuilderFactory.newInstance();
+	}
+
+	public List<String> getTestsToExecute(String path) {
+
+		List<String> testsToExecute = new ArrayList<String>();
+		try {
+
+			builder = documentBuilderFactory.newDocumentBuilder();
+			document = builder.parse(path);
+			document.getDocumentElement().normalize();
+
+			NodeList nodeLst = document.getElementsByTagName("Test");
+			for (int s = 0; s < nodeLst.getLength(); s++) {
+				testsToExecute.add(((Node) nodeLst.item(s)).getTextContent());
+			}
+
+		} catch (Exception e) {
+			logger.error(" error while parsing   @ " + path);
+		}
+
+		return testsToExecute;
+	}
+
+	public List<String> getTestStepDetails(String testDetailsFile,
+			String testCaseName) {
+
+		List<String> testSteps = new ArrayList<String>();
+		testSteps.addAll(getTestDetailsMap(testDetailsFile).get(testCaseName));
+
+		return testSteps;
+
+	}
+
+	public Map<String, List<String>> getTestDetailsMap(String testDetailsFile) {
+
+		Map<String, List<String>> testDetailsMap = new LinkedHashMap<String, List<String>>();
+
+		List<String> testSteps = null;
+		try {
+
+			builder = documentBuilderFactory.newDocumentBuilder();
+			document = builder.parse(testDetailsFile);
+			document.getDocumentElement().normalize();
+
+			NodeList nodeList = document.getElementsByTagName("Test");
+
+			for (int i = 0; i < nodeList.getLength(); i++) {
+				try {
+
+					Node node = (Node) nodeList.item(i);
+					NamedNodeMap nodeMap = node.getAttributes();
+					String key = nodeMap.getNamedItem("name").getNodeValue();
+					NodeList stepList = node.getChildNodes();
+					testSteps = new ArrayList<String>();
+
+					for (int j = 0; j < stepList.getLength(); j++) {
+
+						Node subNode = stepList.item(j);
+						if (subNode.getNodeType() == Node.ELEMENT_NODE) {
+							testSteps.add(subNode.getTextContent());
+						}
+
+					}
+
+					if(testDetailsMap.containsKey(key)){
+						logger.warn(" Duplicate testCase Name  [ "+key +" ] Exists in TestDetails.xml  ");
+					}
+					
+					testDetailsMap.put(key, testSteps);
+
+				} catch (Exception e) {
+					logger.error(" error while parsing testDetails.xml "
+							+ e.getMessage());
+				}
+
+			}
+
+		} catch (Exception e) {
+			logger.error(" error while parsing testDetails.xml "
+					+ e.getMessage());
+		}
+		return testDetailsMap;
+
+	}
+
+	/*
+	 * public List<TestSteps> getTestSteps(String testStepsFile, String
+	 * stepName) {
+	 * 
+	 * return getTestStepsMap(testStepsFile).get(stepName);
+	 * 
+	 * }
+	 */
+	public Map<String, Integer> getStepReaptMap(String testStepsFile) {
+
+		Map<String, Integer> stepsRepeatMap = new LinkedHashMap<String, Integer>();
+		try {
+
+			builder = documentBuilderFactory.newDocumentBuilder();
+			document = builder.parse(testStepsFile);
+			document.getDocumentElement().normalize();
+
+			NodeList nodeList = document.getElementsByTagName("StepName");
+			for (int i = 0; i < nodeList.getLength(); i++) {
+				try {
+
+					Node node = (Node) nodeList.item(i);
+					NamedNodeMap nodeMap = (node).getAttributes();
+
+					String key = nodeMap.getNamedItem("name").getNodeValue();
+
+					if ((key != null) && (key.trim().length() >= 1)) {
+
+						Integer count = Integer.parseInt(nodeMap.getNamedItem(
+								"count").getNodeValue());
+						stepsRepeatMap.put(key, count);
+
+					}
+
+				} catch (Exception e) {
+					logger.error("  error while parsing testSteps.xml "
+							+ e.getMessage());
+				}
+			}
+
+		} catch (Exception e) {
+			logger.error(" error while parsing testSteps.xml" + e.getMessage());
+		}
+
+		return stepsRepeatMap;
+	}
+
+	public Map<String, List<TestSteps>> getTestStepsMap(String testStepsFile) {
+
+		Map<String, List<TestSteps>> map = new LinkedHashMap<String, List<TestSteps>>();
+
+		List<TestSteps> testSteps = null;
+		try {
+			TestSteps steps = null;
+
+			builder = documentBuilderFactory.newDocumentBuilder();
+			document = builder.parse(testStepsFile);
+			document.getDocumentElement().normalize();
+
+			NodeList nodeList = document.getElementsByTagName("StepName");
+			for (int i = 0; i < nodeList.getLength(); i++) {
+
+				Node node = (Node) nodeList.item(i);
+				NamedNodeMap nodeMap = (node).getAttributes();
+
+				String key = nodeMap.getNamedItem("name").getNodeValue();
+
+				if ((key == null) || (key.trim().length() < 1)) {
+					logger.warn(" STEPNAME MUST HAVE  VALID NAME : " + key);
+				}
+
+				testSteps = new ArrayList<TestSteps>();
+
+				NodeList childNodeList = node.getChildNodes();
+				for (int a = 0; a < childNodeList.getLength(); a++) {
+
+					Node subNode = (Node) childNodeList.item(a);
+
+					if (subNode.getNodeType() == Node.ELEMENT_NODE) {
+						steps = new TestSteps();
+						try {
+
+							NamedNodeMap stepData = subNode.getAttributes();
+
+							steps.setComponentName(stepData.getNamedItem(
+									"aComponent").getNodeValue());
+							steps.setActionName(stepData
+									.getNamedItem("bAction").getNodeValue());
+
+							Node msgNode = stepData
+									.getNamedItem("cExpectedValue");
+
+							if (msgNode != null) {
+								steps.setMessageName(msgNode.getNodeValue());
+							} else {
+								steps.setMessageName("NA");
+								logger.error("TestSteps.xml  --> STEP NAME = "
+										+ key
+										+ " , COMPONENT= "
+										+ steps.getComponentName()
+										+ " , MESSAGE ATTRIBUTE NAME IS HAVING PROBLEM ");
+							}
+
+							if ((steps.getComponentName() == null)
+									|| (steps.getComponentName().trim().length()<1)) {
+								logger.warn("STEP NAME  "
+										+ key
+										+ " ATTRIBUTE aComponent VALUE IS EMPTY/NULL: "
+										+ steps.getComponentName());
+							} else if ((steps.getActionName() == null)
+									|| (steps.getActionName().trim().length()<1)) {
+								logger.warn("STEP NAME  "
+										+ key
+										+ " ATTRIBUTE bAction VALUE IS EMPTY/NULL : "
+										+ steps.getActionName());
+							} else if ((steps.getMessageName() == null)
+									|| (steps.getMessageName().trim().length()<1)) {
+								logger.warn("STEP NAME  "
+										+ key
+										+ " ATTRIBUTE  cExpectedValue VALUE IS EMPTY/NULL : "
+										+ steps.getMessageName());
+							}
+
+						} catch (Exception e) {
+
+							logger.error("	TestSteps.xml  --> STEP NAME : "
+									+ key + ", COMPONENT :"
+									+ steps.getComponentName()
+									+ "    IS HAVING INVALID ATTRIBUTES");
+						}
+						testSteps.add(steps);
+					}
+
+				}
+				if(map.containsKey(key)){
+					logger.warn(" TestSteps.xml file is having duplicate stepName <  "+key +"  >");
+				}
+				map.put(key, testSteps);
+
+			}
+
+		} catch (Exception e) {
+			logger.error(" error while parsing testSteps.xml " + e.getMessage());
+		}
+
+		return map;
+
+	}
+
+	public void validateTestSteps(Map<String, List<TestSteps>> testStepsMap,
+			Map<String, String> msgMap, Map<String, String> objMap) {
+		Set<Entry<String, List<TestSteps>>> entrySet = testStepsMap.entrySet();
+
+		for (Entry<String, List<TestSteps>> entry : entrySet) {
+
+			for (TestSteps testSteps : entry.getValue()) {
+
+				if (objMap.get(testSteps.getComponentName()) == null) {
+					logger.warn("STEPNAME < " + entry.getKey()
+							+ "  >  OBJ REFERENCE ["
+							+ testSteps.getComponentName()
+							+ "]  NOT DECLARED IN ObjectReference.xml ");
+
+				} else if (msgMap.get(testSteps.getMessageName()) == null) {
+					logger.warn("STEPNAME < " + entry.getKey()
+							+ "  >  MSG REFERENCE ["
+							+ testSteps.getMessageName()
+							+ "] NOT DECLARED IN Messages.xml ");
+				}
+
+			}
+
+		}
+
+	}
+
+	public Map<String, String> getMessageInfo(String path) {
+		Map<String, String> msgMap = new LinkedHashMap<String, String>();
+
+		try {
+			String msgName = null;
+			String msgVal = null;
+
+			document = builder.parse(path);
+			document.getDocumentElement().normalize();
+			NodeList nodeList = document.getElementsByTagName("Msg");
+			for (int i = 0; i < nodeList.getLength(); i++) {
+
+				try {
+
+					msgName = nodeList.item(i).getAttributes()
+							.getNamedItem("name").getNodeValue();
+					msgVal = nodeList.item(i).getTextContent();
+					
+					if (msgMap.containsKey(msgName)) {
+						logger.warn(" Message key [ " + msgName
+								+ "  ]  Already Exists for Message Value : "+msgVal);
+					}
+					
+					if (msgMap.containsValue(msgVal)) {
+						logger.warn(" Message Value [ " + msgVal
+								+ " ] Already Exists for Message Key :  "+msgName);
+					}
+					msgMap.put(msgName, msgVal);
+
+					
+
+				} catch (Exception e) {
+					logger.error(" error at MSG_NAME " + msgName
+							+ ",  MSG_VAL " + msgVal);
+				}
+			}
+
+		} catch (Exception e) {
+			logger.error(" error while parsing Message.xml File "
+					+ e.getMessage());
+		}
+
+		return msgMap;
+	}
+
+	public Map<String, String> getObjectReferences(String path) {
+		Map<String, String> objMap = new LinkedHashMap<String, String>();
+		String objName = null;
+		String objVal = null;
+		try {
+
+			document = builder.parse(path);
+			document.getDocumentElement().normalize();
+			NodeList nodeList = document.getElementsByTagName("RefValues");
+			for (int i = 0; i < nodeList.getLength(); i++) {
+
+				try {
+
+					objName = nodeList.item(i).getAttributes()
+							.getNamedItem("aName").getNodeValue();
+					objVal = nodeList.item(i).getAttributes()
+							.getNamedItem("bObjRef").getNodeValue();
+					
+					if (objMap.containsKey(objName)) {
+						logger.warn(" Object Reference Name [" + objName
+								+ "]   Already Exists with Value : "+objVal);
+					}
+					
+					if (objMap.containsValue(objVal)) {
+						logger.warn(" Object Value [" + objVal
+								+ "] Already Exists  with  Obj Reference Name :  "+objName);
+					}
+					objMap.put(objName, objVal);
+				} catch (Exception e) {
+					logger.error(" error OBJ_NAME " + objName + ",  OBJ_REF "
+							+ objVal);
+				}
+			}
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			logger.error(" error while parsing ObjectReference.xml "
+					+ e.getMessage());
+		}
+
+		return objMap;
+	}
+
+}

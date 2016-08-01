@@ -1,0 +1,9 @@
+package automation.script;
+
+import org.testng.annotations.Test;
+
+public class TestDriver1 {
+  @Test
+  public void f() {
+  }
+}

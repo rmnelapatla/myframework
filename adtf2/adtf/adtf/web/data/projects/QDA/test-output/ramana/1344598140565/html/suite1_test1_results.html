@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - TEST2_WINDOWS_7_FIREFOX_12_LOCALHOST_NoCounty</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>TEST2_WINDOWS_7_FIREFOX_12_LOCALHOST_NoCounty</h1>
+<p>
+  Test duration: 122.664s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          
+            
+<tr>
+  <td class="duration">
+    105.642s
+  </td>
+  <td class="result">
+        
+          <i>TestCase Name: </i><span class="arguments">"Row514_FileMgmt_CopySourceFiles_WithoutCopyLayout"</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: ERROR WHILE EXECUTING TEST STEP ::: [row514_FileMgmt_CopySourceFiles_WithoutCopyLayout ]&nbsp; , ACTION&nbsp; : {select} , {OBJECT&nbsp; :&nbsp; CountyEditionSelection_CopySourceFiles_FilenameSelect = //span[@id=&apos;wwctrl_ajax_copySourceFiles_copyFileDto_0__fileId&apos;]/select[@id=&apos;ajax_copySourceFiles_copyFileDto_0__fileId&apos;]},&nbsp; { MESSAGE&nbsp; :&nbsp; FileMgmt_CopySourceFile_CopyName_Stored = StoredString}</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:89)<br />
+              automation.scripts.TestDriver.executeTest(TestDriver.java:243)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)<br />
+              java.lang.reflect.Method.invoke(Method.java:597)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:673)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.runWorkers(TestRunner.java:1147)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:749)<br />
+              org.testng.TestRunner.run(TestRunner.java:600)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:317)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:223)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:964)<br />
+              org.testng.TestNG.run(TestNG.java:900)<br />
+              com.adaequare.testng.adtf.controller.TesterController.runExectution(TesterController.java:993)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)<br />
+              java.lang.reflect.Method.invoke(Method.java:597)<br />
+              org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)<br />
+              org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:436)<br />
+              org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:424)<br />
+              org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:790)<br />
+              org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)<br />
+              org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:669)<br />
+              org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:585)<br />
+              javax.servlet.http.HttpServlet.service(HttpServlet.java:641)<br />
+              javax.servlet.http.HttpServlet.service(HttpServlet.java:722)<br />
+              org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)<br />
+              org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:311)<br />
+              org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:116)<br />
+              org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:101)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:182)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:105)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:125)<br />
+              org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:323)<br />
+              org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:173)<br />
+              org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:237)<br />
+              org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:167)<br />
+              org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)<br />
+              org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)<br />
+              org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)<br />
+              org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)<br />
+              org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)<br />
+              org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)<br />
+              org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)<br />
+              org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:928)<br />
+              org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)<br />
+              org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)<br />
+              org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:987)<br />
+              org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:539)<br />
+              org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:300)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)<br />
+              java.lang.Thread.run(Thread.java:662)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>

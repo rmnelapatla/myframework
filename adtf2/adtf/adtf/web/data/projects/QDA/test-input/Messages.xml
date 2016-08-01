@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="UTF-8"?><Messages>
+
+<Msg name="AllinputRandomvalue_RandomString">RandomString</Msg>
+<Msg name="AllInputvalue_adaequare1">adaequare1</Msg>
+<Msg name="AllInputvalue_Empty"></Msg>
+<Msg name="AllInputvalue_Admin">admin</Msg>
+<Msg name="Type_DrpDwn_Value">CHAR</Msg>
+<Msg name="File_Induction_Countycntdisplay_Msg">* Counties found, displaying *</Msg>
+<Msg name="FileMgmt_Fieldlist_Msg1">* Fields found, displaying *</Msg>
+<Msg name="JV_records_Exact">* Fields found, displaying *</Msg>
+<Msg name="Allpurpose_1numericvalue">1</Msg>
+<Msg name="Allpurpose_2numericvalue">2</Msg>
+<Msg name="Allpurpose_20numericvalue">20</Msg>
+<Msg name="Allpurpose_4numericvalue">4</Msg>
+<Msg name="Allpurpose_40numericvalue">40</Msg>
+<Msg name="CntyEdSelection_MidleTwoDigit_FIPSCode">40</Msg>
+<Msg name="Allpurpose_5numericvalue">5</Msg>
+<Msg name="Allpurpose_9numericvalue">9</Msg>
+<Msg name="Allpurpose_90numericvalue">90</Msg>
+<Msg name="Allpurpose_888numericvalue">888</Msg>
+<Msg name="Allpurpose_999numericvalue">999</Msg>
+<Msg name="CountyEditionSelection_ErrorMsg2">* County Editions found, displaying *</Msg>
+<Msg name="FileMgt_DefineGenerateField_NewField_FieldSearch_FieldNameValue_Complex2">TAXDIST</Msg>
+<Msg name="Miscellaneous_Func">AS_IS</Msg>
+<Msg name="TranSets_Records_Verify">* Distributable Sets found, displaying *</Msg>
+<Msg name="Trgt_sel_addonWithacres">acres</Msg> 
+<Msg name="Allpurpose_10numericvalue">10</Msg>
+<Msg name="Allpurpose_15numericvalue">15</Msg>
+<!--**********************-->
+<!--******WAIT TIMES******-->
+<!--**********************-->
+
+<Msg name="MIN_WAIT">2000</Msg>
+<Msg name="Wait">6000</Msg>
+<Msg name="AVG_Wait">6000</Msg>
+<Msg name="MID_WAIT">8000</Msg>
+<Msg name="LONG_Wait">30000</Msg>
+<Msg name="TIMEOUT">50000</Msg>
+<Msg name="Pausetime2Hrs">7200000</Msg>
+<Msg name="DOUBLE_TIMEOUT">100000</Msg>
+
+<!--**********************-->
+<!--*****LOGIN RELATED****-->
+<!--**********************-->
+
+<Msg name="Validusername">adaequare1</Msg>
+<Msg name="Validpassword">adaequare1</Msg>
+<Msg name="Invalidusername">adaequare123</Msg>
+<Msg name="Invalidpassword">adaeq53</Msg>
+
+<Msg name="loginmsg">Logout</Msg>
+
+
+<!--**********************-->
+<!--COUNTY NAMES AND CODES-->
+<!--**********************-->
+
+<Msg name="FIPS_CODE1">13023</Msg>
+<Msg name="FIPS_CODE2">37117</Msg>
+<Msg name="FIPS_CODE3">54015</Msg>
+<Msg name="FIPS_CODE4">40125</Msg>
+<Msg name="FIPS_CODE5">51065</Msg>
+<Msg name="FIPS_CODE6">01000</Msg>
+<Msg name="FIPS_CODE7">01003</Msg>
+<Msg name="FIPS_CODE8">51001</Msg>
+<Msg name="FIPS_CODE9">01015</Msg>
+<Msg name="FIPS_CODE10">54003</Msg>
+
+<Msg name="AssignedTo_Blank"></Msg> 
+<Msg name="TEST_FIPSCODE1">12345</Msg>
+<Msg name="TEST_FIPSCODE2">01007</Msg>
+<Msg name="TEST_FIPSCODE3">1100</Msg>
+
+<!--**********************-->
+<!--****ERROR MESSAGES****-->
+<!--**********************-->
+<Msg name="FileInduction_ErrorMsg1">The fields highlighted below that contain no data are required</Msg>
+
+<Msg name="ScheduleFileInduction_SubmitErrorMessage1">A File already exists on the server</Msg>
+<Msg name="ScheduleFileInduction_SubmitErrorMessage2">rename the file(s) or check</Msg>
+<Msg name="ScheduleFileInduction_SubmitErrorMessage3">"Overwrite Existing File(s)"</Msg>
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarDetial_InvalidSaveMsg">The Job Variable Name can only contain letters, numbers (not as the first character), and underscores</Msg>
+<Msg name="FileMgmt_DefineGenField_Expert_Wizard_Msg">Saving this rule may result in a loss of formatting done in Expert Mode. Do you want to Save?</Msg>
+<Msg name="FileMgmt_Define_GenField_Reorder_AfterExpertMode">Reordering may result in a loss of formatting done in Expert Mode. Do you want to Reorder?</Msg>
+<Msg name="AssertText">Selected mapping(s) were successfully deleted</Msg>
+<Msg name="FilePropertiesSavedValue">File Properties successfully saved</Msg>
+<Msg name="FileInduction_Job_SuccessMsg">Job successfully submitted</Msg>
+<Msg name="CtyEdnSelection_CopyCountyFrom_SuccessMsg">Copy successful</Msg>
+<Msg name="Transform_Set_Saved_Verify">Transform Set successfully saved</Msg>
+<Msg name="MessageOfToDelete">Are you sure you want to delete this Field?</Msg>
+<Msg name="EditionVersionInvalidMessage1">The Edition is invalid</Msg>
+<Msg name="EditionVersionInvalidMessage2">The Version is invalid</Msg>
+<Msg name="TaxYearErrorMessage">The Tax Year must be a number greater than or equal to 2000</Msg>
+<Msg name="JobNotificationEmailErrorMessage">Email is required when Job Notification is checked</Msg>
+<Msg name="JobNotificationCheckboxErrorMessage">At least one Job Notification must be checked</Msg>
+<Msg name="RecvMsg_Afterdelete_inSummary">Are you sure you want to delete this Source File?</Msg>
+<Msg name="JobNotificationInvalidEmailErrorMessage">Please enter a valid email address</Msg>
+<Msg name="FileMgmt_CopySourceFile_CopyMsg">*Source File Copy completed successfully</Msg>
+<Msg name="Txtafter_fileis_copied">*Source File Copy completed successfully</Msg>
+
+<Msg name="FileTransfer_EmptyFile_validationMSG">Please select at least one file</Msg>
+<Msg name="RoutineSuccessMsg">The Rules were successfully converted to a Routine</Msg>
+<Msg name="FileMgmt_DefineGenField_Save_Msg">Generate Field successfully saved</Msg>
+
+<Msg name="TimeOutMsg1">Your session has timed out.</Msg>
+<Msg name="TimeOutMsg2">Please login again.</Msg>
+<Msg name="Reorder_Saved">The Rule reorder successfully saved</Msg>
+<Msg name="AssertTextB">Linkage Rule Builder</Msg>
+<Msg name="PopUpWindow">Confirm Delete</Msg>
+<Msg name="RenameFiledName">ToDelete</Msg>
+<Msg name="InvalidCredentialsMessage">Bad credentials</Msg>
+<Msg name="EmptyCredentialsMessage1">Please enter a Username</Msg>
+<Msg name="EmptyCredentialsMessage2">Please enter a Password</Msg>
+<Msg name="Txtafter_Fldis_Created">Generate Field successfully saved</Msg>
+<Msg name="Txtafter_Fieldisadded">Field successfully added</Msg>
+<Msg name="NoCounties_ErrorMsg">No Counties found.</Msg>
+<Msg name="Verify_txtafter_nochars_search">No Available Fields found.</Msg>
+<Msg name="NoData">No Available Fields found.</Msg>
+
+<Msg name="OneFiledMustBeSelectedPopUp">At least one field must be selected</Msg>
+
+<Msg name="Msgafter_addselected">Generate Field(s) successfully removed</Msg>
+<Msg name="txtafter_splcharsearch">No Linkage Mappings found.</Msg>
+<Msg name="MappingSearch_LHSField_NotPresentSplCharVerify">No Linkage Mappings found.</Msg>
+<Msg name="Txtsearch_formatchingcounty">One Linkage Mapping found.</Msg>
+<Msg name="MappingSearch_LHSField_EmptyCharsVerify">One Linkage Mapping found.</Msg>
+
+<Msg name="SuccessTxtafter_SavingRoutine">The Routine was successfully saved</Msg>
+
+
+<Msg name="Txtafter_Rulecreation">Routine Rule successfully saved</Msg>
+<Msg name="Msgafter_FormattingRule_Creation">Routine Rule successfully saved</Msg>
+<Msg name="Errormsg_aftersaving_thesame_routine">A Routine with this name already exists</Msg>
+<Msg name="Successmsg_after_ruledeletion">Routine Rule successfully deleted</Msg>
+<Msg name="Msg_LongTxt">The Name is too long</Msg>
+
+
+<Msg name="FileTransformationHyperLink">File Transformation</Msg>
+<Msg name="LinkageMappingHyperLink">Linkage Mapping</Msg>
+<Msg name="ClickOnRemoveSelected">Remove Selected</Msg>
+<Msg name="AssertCreatedLinkageRule">Linkage Rule sucessfully saved</Msg>
+<Msg name="MappingSearch_Source_MappingSummaryverify">No Transform Mappings found.</Msg>
+<Msg name="TR_Contains_NotPrstSpl_textrecords">No Transform Fields found.</Msg>
+<Msg name="TM_MingSrh_RmvSelected_Verify">At least one mapping must be selected</Msg>
+<Msg name="TR_Contains_1stSvrl_textrecord">One Transform Field found.</Msg>
+<Msg name="RmvSelected_checkbox_Verify">None of the selected mapping</Msg>
+<Msg name="Job_fild_txtDESverify">The Description is too long</Msg>
+<Msg name="Job_fild_popup">You have Job Variable changes that have not been saved</Msg>
+<Msg name="Job_fild_popupfordelete">Are you sure you want to delete this job variable?</Msg>
+<Msg name="SearchInFileMgmt">One County Edition found.</Msg>
+<Msg name="SaveTemplateSuccesMsg">File Properties successfully saved</Msg>
+<Msg name="DefineSeq_CondensedLayout_Msg">No Sequence Key Fields found</Msg>
+<Msg name="DefineSeq_SaveFirstLetter_Number_Msg">The Field Name can only contain letters, numbers (not as the first character), and underscores</Msg>
+<Msg name="FileTransformation_Lhs_AvailableFieldsMsg">LHS available field(s) limited to unique key fields because the layout is condensed</Msg>
+<Msg name="NumErrMsg">The Field Name can only contain letters, numbers (not as the first character), and underscores</Msg>
+<Msg name="FileMgmt_CopySrcFiles_Save_SpecialChars_Msg">illegal characters are spaces, tabs, and any of the following</Msg>
+<Msg name="DefineSeq_SaveFieldName_Space_Msg">The field name is missing</Msg>
+<Msg name="DefineSeq_SaveSeqFieldName_Success_Msg">Sequence key field successfully saved</Msg>
+<Msg name="DefineSeq_SaveSeqFieldName_RenameFieldExists_Msg">There is already a field with this name</Msg>
+<Msg name="FileMgmt_CopySourceFile_Confiramtion">Copy Source File Request</Msg>
+<Msg name="FileMgmt_SimpleMerges_Msg">Simple Merges</Msg>
+<Msg name="FileMgmt_DefineGenFields_Text">Generate Fields</Msg>
+<Msg name="FileMgmt_DefineGenFields_ReorderClick_Text">Reorder Generate Field Rules</Msg>
+
+<Msg name="Define_Complex_Merge">Complex Merge</Msg>
+<Msg name="Define_Complex_Merge_SaveMsg">Complex Merge has been successfully saved</Msg>
+<Msg name="Define_Complex_Merge_FoundMsg">One Complex Merge found.</Msg>
+<Msg name="Define_Complex_Merge_UpdateMsg">One Complex Merge found.</Msg>
+<Msg name="Define_Complex_Merge_FilesAdditionMsg">File(s) successfully added</Msg>
+<Msg name="Define_Complex_Merge_FilesRemovalMsg">File(s) successfully removed</Msg>
+<Msg name="Define_Complex_Merge_ReorderScreenMsg">Reorder Files</Msg>
+<Msg name="Define_Complex_Merge_SuccessfulReorderMsg">Successfully reordered files</Msg>
+<Msg name="Define_Complex_Merge_CtyEdn">Complex Merges</Msg>
+<Msg name="Define_Complex_Merge_MergeNameExists">A Complex Merge with this Name already exists</Msg>
+<Msg name="Define_Complex_Merge_SpecialCharsSave">The Name can only contain letters</Msg>
+<Msg name="FileMgmt_FieldNamesAdded">Field(s) successfully added</Msg>
+
+<Msg name="RemoveSuccessMsg">Field(s) successfully removed</Msg>
+
+<Msg name="FileMgmt_DefineKeySort_RemoveSelectedMsg">At least one item must be selected</Msg>
+<Msg name="Transform_Remove_Err">At least one item must be selected</Msg>
+<Msg name="FileMgmt_LkpValue_ExclusionList_Msg">Exclusion Rule successfully deleted</Msg>
+<Msg name="FileMgmt_DefineGenField_Msg">Generate Field Info</Msg>
+<Msg name="CtyEdnTab_Fieldproperties_SaveMsg">Field Properties successfully saved</Msg>
+<Msg name="CtyEdnTab_Fieldproperties_DeleteMsg">Field successfully deleted</Msg>
+<Msg name="FileMgmt_DefineSeqkey_ReorderText">Reorder Sort Sequence Key Fields</Msg>
+<Msg name="FileMgmt_DefineSeqkey_ReorderText_ChangeOf">Reorder On Change Sequence Key Fields</Msg>
+<Msg name="ContainTextMatchFound">*Available Fields found*.</Msg>
+<Msg name="ExactTextMatchFound">*Available Fields found*.</Msg>
+<Msg name="VerifyCopyErrMsg">There are no rules to copy to a target field</Msg>
+<Msg name="EditionErrMsg">The county edition is not valid</Msg>
+<Msg name="CopyTragetMsg">Copy Target Field Rules</Msg>
+<Msg name="ToTargetMsg">To Target Field</Msg>
+<Msg name="RuleExist">Rules already exist; please check Overwrite Existing Rules</Msg>
+<Msg name="TestRuleScreen">Rule Source Field/Job Variable Entries</Msg>
+<Msg name="GroupTestTitleMsg">Transform Group Tester</Msg>
+<Msg name="GroupTestSelectTitle">Lots Units Nbr</Msg>
+<Msg name="GroupTestSelectSourceTitle">Source Field/Job Variable Entries</Msg>
+<Msg name="Rule_Report">Transform Field Search</Msg>
+<Msg name="Transform_Msg">Schedule County Edition Transform</Msg>
+<Msg name="Transform_Exclu_NoData">No Target Fields found.</Msg>
+<Msg name="NonExistEdition_ErrorMsg">The County Edition information is not valid</Msg>
+<Msg name="NonExistRoutines_ErrorMsg">No Routines found.</Msg>
+<Msg name="Routines_LableMsg">Routine List</Msg>
+<Msg name="CopySel_SuccesMsg">Routine(s) successfully copied</Msg>
+<Msg name="Routine_Maintance_header">Routine Maintenance</Msg>
+<Msg name="One_Routine_Msg">One Routine found.</Msg>
+<Msg name="Routine_Delete_Msg">The Routine was successfully deleted</Msg>
+<Msg name="FieldSearch_FieldName_Exact_SeveralCharsVerify">One Fields found.</Msg>
+<Msg name="FieldSearch_Field_MsgVerify">To create a new field, click the Save button above.</Msg>
+<Msg name="ScheduleFileInductionDetails">Schedule File Induction</Msg>
+<Msg name="FileInduction_SchedlueFileInduction_ScheduleMsgTmrow_SuccessfulMsg">Scheduled Successfully.</Msg>
+
+
+<Msg name="RuleCreatedAssertion">Rule successfully saved</Msg>
+<Msg name="FileInduction_SchedlueFileInduction_ScheduleMsgPrevday_FilureMsg">Scheduled time occurs in the past</Msg>
+<Msg name="CountyEditionSelection_InvalidFipsCodMesg">No matching county editions were found.</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_DuplRowAction_OnDuplicRowCHoice1">Create an aggregate row</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_DuplRowAction_OnDuplicRowDefaultChoice">Select Duplicate Row Action</Msg>
+<Msg name="CountyEditionSelection_CountyList_CountyEdition_SaveMessage">County Edition successfully saved</Msg>
+<Msg name="CountyEditionSelection_CountyList_CountyEdition_TaxYearErrorMsg">The Tax Year must be a number greater than or equal to 2000</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_SortKeyTable_RemoveSelectedLinkInvalidMessage">At least one item must be selected</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetSearch_InvalidSearchMsg">No Distributable Sets found.</Msg>
+<Msg name="COuntyEditionSelection_FIleManagment_FieldPropetys_SaveMessage">Field Properties successfully saved</Msg>
+
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_AddMessage">Field(s) successfully added</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_EmptyMessage">No Available Fields found</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_SortKeyTable_EmptyFieldsMessage">No Sort Key Fields found</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_ExclusionRulBuild_SaveMessg">Exclusion Rule successfully saved</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_DuplRowAction_SaveMsg">Duplicate Row Action successfully saved</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_Reorder_SaveMsg">The Sort Key Field reorder successfully saved</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformRules_InvalidSearchMsg">No Transform Fields found.</Msg>
+<Msg name="Src_Text_Field_Save">Transform Mapping successfully saved</Msg>
+<Msg name="saved_job_verify">Job Variable Rule successfully saved</Msg>
+
+<Msg name="verified_save_jobtext">Job Variable has been successfully saved</Msg>
+<Msg name="todelete_AdeTxt_verify">Job Variable successfully deleted</Msg>
+<Msg name="JV_records_Not_Present">No Fields found.</Msg>
+<Msg name="Transform_Field_Search_text">Transform Field Search</Msg>
+<Msg name="Transform_Rule_Builder_text">Transform Rule Builder</Msg>
+<Msg name="Transform_Rule_Summary_text">Transform Rule Summary</Msg>
+<Msg name="Available_Fields_Text">Available Fields</Msg>
+<Msg name="FileTransformation_TransformSets_RuleBuildeMsg">Transform Set Rule Builder</Msg>
+<Msg name="FileTransformation_TransformSet_RuleChanges_AlertMsg">You have Transform Set Rule changes that have not been saved</Msg>
+
+<Msg name="Syntax_CorrectMsg">No Syntax errors found.</Msg>
+
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_UnSaveMsg">You have Routine changes that have not been saved</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariab_JobVarSourceTab_FieldAddedMSg">Field(s) successfully added</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariab_JobVarSourceTab_SourceFieldAddedMSg">One Source found.</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariab_AvilableFlds_TotalFldsMsgOne">One Field found.</Msg>
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_AvaiFieldTab_InvalidAddSelectedMsg">No Fields to add</Msg>
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuleSummary_DeleteMsg">Rule(s) successfully deleted</Msg>
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuleSummaty_SavePopupMsg">Saving this rule may result in a loss of formatting done in Expert Mode. Do you want to Save?</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ReorderTab_SavePopupMsg">Reordering may result in a loss of formatting done in Expert Mode. Do you want to Reorder?</Msg>
+
+
+<Msg name="ExprtMode_DeleteMessage">Routine Rule successfully deleted</Msg>
+
+<Msg name="DeleteTransform_Message">Transform Set(s) successfully deleted</Msg>
+
+
+<Msg name="RoutineRule_SuccessMsg">Routine Rule successfully saved</Msg>
+<Msg name="Reorder_SuccessMsg">Routine Rules successfully reordered</Msg>
+
+<Msg name="AlertMsgPopUp">Saving this rule may result in a loss of formatting done in Expert Mode. Do you want to Save?</Msg>
+<Msg name="ReOrderPopUpWindow">Confirm Reorder</Msg>
+<Msg name="ReorderMsgToAssert">Reordering may result in a loss of formatting done in Expert Mode. Do you want to Reorder?</Msg>
+<Msg name="ReOrderedSucessfully">Linkage Rules successfully reordereds</Msg>
+<Msg name="DeleteConfirmPopUpWindow">Confirm Delete</Msg>
+<Msg name="DeleteMsgToAssert">Are you sure you want to delete this Linkage Rule?</Msg>
+<Msg name="DeletedRulesSucessfully">Linkage Rule successfully deleted</Msg>
+
+<Msg name="WizardModeWindow">Linkage Rule Builder</Msg>
+<Msg name="FollowingRulesCretedLabelInWizardMode">The following rules were created in expert mode</Msg>
+
+<Msg name="AssertionOfMessage">Linkage Mapping successfully saved</Msg>
+<Msg name="Header_CopySource_File">Copy Source Files</Msg>
+<Msg name="Header_DefineComplex_Merge">Complex Merge Layout</Msg>
+<Msg name="CopyCunt_MoreFiles_Error">Too many source files in this County Edition to copy</Msg>
+<Msg name="Match_selected_County_Source_Field">Match selected County Edition Source Files to Current Edition</Msg>
+<Msg name="Match_selected_County_Target_Field">Match selected County Edition Target Files to Current Edition</Msg>
+<Msg name="OverWrite_SRC_msg">All sources and targets from Selected County Edition must be mapped to those in the Current Edition</Msg>
+<Msg name="Error_Msg_without_Selecting_Overwrite">The current County Edition has existing county edition routines</Msg>
+<Msg name="InValid_MUNC_Text_Verify">This County Edition does not exist</Msg>
+<Msg name="POPUP_Delete_text">You have County Edition information that have not been saved.</Msg>
+<Msg name="SingleObjectDeletedValue">Generate Field(s) successfully removed</Msg>
+
+<Msg name="Search_Special_Match">* Available Fields found, displaying *</Msg>
+<Msg name="GenerateField_SplChar_ErrorMsg">The Field Name can only contain letters, numbers (not as the first character), and underscores</Msg>
+
+
+<Msg name="ContainSpecialMatchFound">* Available Fields found, displaying *</Msg>
+
+
+
+
+<Msg name="NoAvailableFields_Msg">No Available Fields found.</Msg>
+<Msg name="CopySel_ErrorMsg">Copy Request #1 for routine ATTIC.RT_5044: the copy name VA065_ATTIC.RT already used for the county edition</Msg> <!--13023 -->
+<Msg name="CopySel_ErrorMsg_2M">Copy Request #1 for routine add1.RT_5044: the copy name 2M already used for the county edition</Msg> <!--13023 -->
+<Msg name="RoutinesList_Msg">* Routines found, displaying *</Msg>
+<Msg name="RoutinesList_Msg12">* Routines found, displaying *</Msg>
+
+<Msg name="CtyEdnSelection_CopyCountyFrom_FileCopy">* Fields found, displaying *</Msg>
+<Msg name="FistRowMsg">* Transform Fields found, displaying *</Msg>
+
+
+
+
+
+
+<Msg name="File_Induction_display_Msg_2_q">* Counties found, displaying *</Msg>
+<Msg name="File_Induction_display_Msg_3_q">* Counties found, displaying *</Msg>
+
+<Msg name="File_Induction_display_Msg_1_zu">One County found.</Msg>
+
+<Msg name="File_Induction_display_Msg_2">* Counties found, displaying *</Msg>
+
+
+
+
+
+<Msg name="CountyEditionSelection_CountyList_Page5Message">* County Editions found, displaying *</Msg>
+<Msg name="CountyEditionSelection_CountyList_Page6Message">* County Editions found, displaying *</Msg>
+<Msg name="CountyEditionSelection_CountyList_LastPageMessage">* County Editions found, displaying *</Msg>
+
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_Page3Message">* Available Fields found, displaying *</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_NextPageMessage">* Available Fields found, displaying *</Msg>
+
+
+<Msg name="JV_records_for_OneRecord">One Field found.</Msg>
+
+<Msg name="Transform_Fields_textverify">Transform Fields</Msg>
+
+<Msg name="TRuls_Verify_TextRecords_Lastclick">* Transform Fields found, displaying *</Msg>
+
+<Msg name="TRuls_Verify_TextRecords_Firstclick">* Transform Fields found, displaying *</Msg>
+
+<Msg name="Verify_addedjob_once">* Sources found, displaying *</Msg>
+<Msg name="Verify_addedjob_twice">* Sources found, displaying *</Msg>
+
+<Msg name="FileTransformation_TransformSet_SetNames">One Transform Set found.</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_SecondPagesMsg">* Routines found, displaying *</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_THirdPagesMsg">* Routines found, displaying *</Msg>
+
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariab_JobVarSourceTab_InvalidRemSelecMSg">No Fields to remove</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_PageTotalAvailFildsMsg">* Fields found, displaying *</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_NxtPageTotalAvailFildsMsg">* Fields found, displaying *</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_LastPageTotalAvailFildsMsg">* Fields found, displaying *</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_Page2TotalSourceFildsMsg">* Sources found, displaying *</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_NextPageTotalSourceFildsMsg">* Sources found, displaying *</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_LastPageTotalSourceFildsMsg">* Sources found, displaying *</Msg>
+
+<Msg name="FileMgmt_CopySrcFiles_SaveAgain_Msg">Copy Source File Request #1 Copy #1 Copy Name * is already in use</Msg>
+<Msg name="FileMgmt_CopySrcFiles_SaveBlank_Msg">The fields highlighted below that contain no data are required</Msg>
+<Msg name="MappingSearch_Srcfild_start1stchar">One Transform Mapping found.</Msg>
+<Msg name="MapingSrh_SrcFild_Cntins_CrSrhVerify">* Transform Mappings found, displaying *</Msg>
+<Msg name="TR_Contains_Spl_textrecords">* Transform Fields found, displaying *</Msg>
+
+<Msg name="MappingSearch_SrcField_EmptyCharVerify">* Transform Mappings found, displaying *</Msg>
+
+
+<Msg name="MappingSearch_Source_splCharVerify">* Transform Mappings found, displaying *</Msg>
+<Msg name="MappingSearch_Source_EmptyCharVerify">* Transform Mappings found, displaying *</Msg>
+<Msg name="MappingSearch_Source_start1stchar">* Transform Mappings found, displaying *</Msg>
+<Msg name="MappingSearch_Lastclick_TextVerify">* Transform Mappings found, displaying *</Msg>
+<Msg name="TranSets_Nextclick_record">* Distributable Sets found, displaying *</Msg>
+<Msg name="TranSets_Lastclick_record">* Distributable Sets found, displaying *</Msg>
+<Msg name="CountyEditionSelection_ErrorMsg1">* County Editions found, displaying *</Msg>
+
+
+<Msg name="CountyEditionSelection_ErrorMsg11">One County Edition found.</Msg>
+
+<Msg name="CountyEditionSelection_FileTeansform_Routines_InvalidSrchMsg">No Routines found.</Msg>
+
+<!--*******************************************-->
+<!--******* TITLES & DROPDOWN VALUES **********-->
+<!--*******************************************-->
+<Msg name="Verify_txtin_cntyedition_selectiontab">County Edition Selection</Msg>
+
+
+<Msg name="DefineGenerate_FieldTabScreen">Define Generate Field</Msg>
+<Msg name="FileMgmt_DefineGenFields">Define Generate Field</Msg>
+<Msg name="DefineGenerate_Sequence_Screen">Define Sequence Key</Msg>
+<Msg name="DefineSeqKey">Define Sequence Key</Msg>
+<Msg name="DefineKeyorSort_Screen">Define Key/Sort</Msg>
+<Msg name="Default_Txtin_dropdown">Select File</Msg>
+<Msg name="FileMgmt_CopySourceFile_SelectFileType">Select File</Msg>
+<Msg name="CountyEdnSelection_FileName_Select">Select File</Msg>
+<Msg name="LinkageRulesLabel">Linkage Rules</Msg>
+<Msg name="linkagerulebuilderview">Linkage Rule Builder</Msg>
+<Msg name="ConditionalTabA">Conditional</Msg>
+<Msg name="AssertFunction">Functions</Msg>
+<Msg name="AssertValue">Value</Msg>
+<Msg name="TransformMapping_Mapping_SourceFieldVal">Value</Msg>
+<Msg name="TransformMapping_MappingSummary_SrcFieldVal">Value</Msg>
+<Msg name="ClickingTestRules">Test Rules</Msg>
+<Msg name="Rules">Rule Results</Msg>
+<Msg name="SourceFiledMsgInRHS">Source Fields</Msg>
+<Msg name="SourceFieldMsg">Source Fields</Msg>
+<Msg name="RulesMsg">Rules</Msg>
+<Msg name="ReportRuleButtonSelection">Rule Report</Msg>
+<Msg name="TransformRulesLabel">Transform Rules</Msg>
+<Msg name="ExpertModeButtonSelection">Expert Mode</Msg>
+<Msg name="RuleBuilder_Text">Rule Builder</Msg>
+<Msg name="apptextQDA">QDA</Msg>
+<Msg name="FileTransferLocationDDownValue">QDA County Files Location</Msg>
+<Msg name="FileTransferLocationDDownValue2">achan</Msg>
+<Msg name="FileTransfer_NewEdition">New Edition</Msg>
+<Msg name="AssignCheckboxtoEmptyval">Select User</Msg>
+<Msg name="FormattingTabA">Formatting</Msg>
+<Msg name="Valuein_Formatting">Area</Msg>
+<Msg name="ExactCheckBox">Exact</Msg>
+<Msg name="SearchButton">Search</Msg>
+<Msg name="StartWithCheckBox">Starts With</Msg>
+
+<Msg name="Selected_Name1">CONTAINS</Msg>
+<Msg name="RemoveAllCheckBox">Remove</Msg>
+<Msg name="ClickingInsert">Insert</Msg>
+<Msg name="ClickingSave">Save</Msg>
+<Msg name="CancelButtonSelection">Cancel</Msg>
+<Msg name="CloseButton">Close</Msg>
+<Msg name="MappingSearch_Source_NotPresentCharSearch">Full</Msg>
+<Msg name="ClickForDecending">LHS</Msg>
+<Msg name="ClickingDriverCheckbox">Driver</Msg>
+<Msg name="DefaultLabel">Select LHS</Msg>
+<Msg name="VerifyTextLayout">Layout</Msg>
+<Msg name="FileTypeFileMgmt">Delimited</Msg>
+<Msg name="FileTypeFileMgmt_SelectFileType">Select File Type</Msg>
+<Msg name="TM_FullCV_Target">Target</Msg>
+<Msg name="Verify_successful_selection_of_file">County Edition</Msg>
+<Msg name="Verify_successful_define_layout_upto">File:</Msg>
+<Msg name="CountyNameClickMsg">Source Files</Msg>
+<Msg name="FIPS_Code_Header">FIPS Code</Msg>
+<Msg name="FIPS_County_name_Header">County Name</Msg>
+<Msg name="FIPS_State_header">State</Msg>
+<Msg name="Select_Routine">Select Routine</Msg>
+<Msg name="FileInduction_FileTransfer_LocationValue">QDA County Files Location</Msg>
+<Msg name="Transform_Sets_TxtVerify">Transform Sets</Msg>
+<Msg name="Transform_Set_Verify">Transform Set</Msg>
+<Msg name="Priority_Verify">Priority:</Msg>
+<Msg name="Tax_Year_Verify">Tax Year:</Msg>
+<Msg name="Source_Field_verify">Source Field</Msg>
+<Msg name="County_Edition_Text_Verify">County Edition</Msg>
+
+<Msg name="CountyEditionSelection_CountyList_Status_Firstvalue">Archived</Msg>
+<Msg name="CountyEditionSelection_CountyList_Status_Lastvalue">Mapped</Msg>
+<Msg name="CountyEditionSelection_CountyList_Status_Default">Select Status</Msg>
+<Msg name="Deleted_text_verify">Selected mapping</Msg>
+<Msg name="Deleted_text_verify_new">Selected mapping(s) were successfully deleted</Msg>
+<Msg name="Distributable_Sets_Text">Distributable Sets</Msg>
+<Msg name="SourceFilesHeader">Source Files</Msg>
+<Msg name="TargetFilesHeader">Target Files</Msg>
+<Msg name="FileLayOutLabelDisplay">File Layout</Msg>
+<Msg name="FileLayOutViewCheckBox">File Layout View</Msg>
+<Msg name="FileType">Delimited</Msg>
+<Msg name="FieldNameValue">* Field Name:</Msg>
+<Msg name="TypeValue">* Type:</Msg>
+<Msg name="LengthValue">Length:</Msg>
+<Msg name="NullableValue">Nullable?</Msg>
+<Msg name="UniqueKeyValue">Part of the unique key?</Msg>
+<Msg name="TypeClick">Type</Msg>
+<Msg name="LHSClick">LHS</Msg>
+<Msg name="LHSFieldClick">LHS Field</Msg>
+<Msg name="RHSClick">RHS</Msg>
+<Msg name="StartPositionValue">Start Position:</Msg>
+<Msg name="DefaultFileSelection_SelectLHS">Select LHS</Msg>
+<Msg name="DefaultFileSelection_SelectRHS">Select RHS</Msg>
+<Msg name="FieldSearchValue">Field Search</Msg>
+<Msg name="FieldLabelValue">Field #:</Msg>
+<Msg name="CountyEditionSelection_statusDropDown_Value4">Inducted</Msg>
+<Msg name="CountyEditionSelectionCountyListStatus_FourthValue">Completed</Msg>
+<Msg name="Induction_Status">Inducted</Msg>
+<Msg name="RuleBuilderLabel">Rule Builder</Msg>
+<Msg name="CountyEditionSelectionCountyListDiffUserStatus">Mapped</Msg>
+<Msg name="NewFieldName">NewField</Msg>
+<Msg name="FIPS_Text_Verify">FIPS:</Msg>
+<Msg name="Edition_Text_Verify">Edition:</Msg>
+<Msg name="MUNC_Text_Verify">MUNC:</Msg>
+<Msg name="Version_Text_Verify">Version:</Msg>
+<Msg name="Find_Button_Verify">Find</Msg>
+<Msg name="Linked_Status">Linked</Msg>
+
+<!--************************************************************-->
+<!--*********** INPUT MESSAGES - NOT COUNTY DEPEDANT  **********-->
+<!--************************************************************-->
+
+
+<Msg name="Email">RandomID</Msg>
+
+<Msg name="RoutineDesc_withSpace">Routine Space</Msg>
+
+<Msg name="GetStoredRoutine">StoredString</Msg>
+<Msg name="Charcter1">adaequare</Msg>
+<Msg name="ValueOfFirstVariable">adaeuqare</Msg>
+
+
+
+
+<Msg name="TRuls_valueverify_Des">928</Msg>
+<Msg name="TRuls_value_for_Lastclick">928</Msg>
+<Msg name="TRuls_value_for_Firstclick">59</Msg>
+<Msg name="TRuls_value_for_Nextclick">465</Msg>
+
+
+<Msg name="Arthematic_value_add_verify">1 + 2</Msg>
+
+<Msg name="formating_value_add">25</Msg>
+<Msg name="DDL_LookUpTable">COPRO</Msg>
+<Msg name="DDL_LookUpValue">CD_DESC</Msg>
+<Msg name="DDL_LookUpValue_lowerCase">code_desc</Msg>
+<Msg name="DDL_MiscelleneousValue">MAX</Msg>
+
+
+<Msg name="FileTransformation_TransformRules_RoutineRuleSummary_RecordID_Value">25 + owner</Msg>
+<Msg name="RoutineRuleBuilder_Arith_Value">25</Msg>
+<Msg name="RoutineRuleBuilder_PlaceHolderValue">Owner</Msg>
+<Msg name="RoutineRuleSummary_RecordID">23 - web</Msg>
+<Msg name="TransformRules_TransformRuleBuilder_Routine_RoutinesValue">33</Msg>
+<Msg name="TransformRules_TransformRuleBuilder_Miscellaneous_MiscValue">33</Msg>
+<Msg name="TransformRules_TransformRuleBuilder_TransformRuleSummary_RuleVal1">AS_IS(33)</Msg>
+
+
+<Msg name="FileTransformation_TransformSet_ArithmeticInput_AddedConditionalRule">4 EQUAL Section.txt (FILE): BLDTYPE</Msg>
+<Msg name="FileTransformation_TransformSet_FormattingInput">FIND_FIRST</Msg>
+<Msg name="FileTransformation_TransformSet_ArithmeticInput_AddedFormattingRule">FIND_FIRST(4, Section.txt (FILE): BLDTYPE)</Msg>
+<Msg name="FileTransformation_TransformSet_AddedLKPRule">LOOKUPIN COUNTY__AC RETURNING prop_ind WHERE code_desc = 4</Msg>
+<Msg name="FileTransformation_TransformSet_AddedMISCRule">AS_IS(Section.txt (FILE): BLDTYPE)</Msg>
+<Msg name="FileTransformation_TransformSet_AddedRoutineRule">DollarToNum(Section.txt (FILE): BLDTYPE)</Msg>
+<Msg name="FileTransformation_TransformSet_AddedLkpRule1">LOOKUPIN COUNTY__AC RETURNING prop_ind WHERE code_desc = Section.txt (FILE): BLDTYPE</Msg>
+
+<Msg name="Trim_All_Function">TRIM_ALL</Msg>
+
+
+<Msg name="FileMgmt_ExpertMode_VerifyMsg">TRIM_ALL([SF:RECORDNUMBER]);</Msg>
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuleBUilder_FunctionsDropDOwnVal2">EQUAL</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuleBUilder_FunctionsDropDOwnVal3">LENGTH</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuleBUilder_FunctionsDropDOwnVal4">AddressClean</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuleBUilder_ValTextBox"> </Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuleBUilder_ValTextBoxTwo">+|@$*()_=!;:}{.,\~`>?</Msg>
+
+
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuleBUilder_FunctionsDropDOwnVal1">TRIM_ALL</Msg>
+
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_ExclusionRulBuild_TestRules_RulesTable_DescriptionValue1">CONCATENATE(ACCTNBR, 10, ACCTENTRY)</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_ExclusionRulBuild_TestRules_RulesTable_ViolationCodValue1">NONE</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_ExclusionRulBuild_TestRules_RulesTable_ResultValue1">104</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_ExclusionRulBuild_TestRules_RulesTable_FinalResValue1">NONE</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_ExclusionRulBuild_TestRules_RulesTable_FinalResValue2">104</Msg>
+<Msg name="Verify_ConditionlTab">Conditional Rule for add1.RT</Msg>
+<Msg name="Verify_Function1">ARITHMATIC</Msg>
+<Msg name="Verify_Function2">CONDITIONAL</Msg>
+<Msg name="Verify_Function3">FORMATTING</Msg>
+<Msg name="Verify_Function4">LOOKUP</Msg>
+<Msg name="Verify_Function5">MISCELLANEOUS</Msg>
+<Msg name="Verify_ReorderMsg">Reorder Rules</Msg>
+<Msg name="Expert_Rule1Entry">rule1 = TRIM("MY RULE 1");</Msg>
+<Msg name="Expert_Rule2Entry">rule2 = 1 + 2 + 3;</Msg>
+<Msg name="Rule1_Msg">rule1 = TRIM("MY RULE 1");rule2 = "1" + "2" + "3";rule3 = LEFT_JUSTIFY(rule2);</Msg>
+<Msg name="Rule2_Msg">rule2 = "1" + "2" + "3";</Msg>
+<Msg name="Rule3_Msg">rule3 = LEFT_JUSTIFY(rule2);</Msg>
+<Msg name="Rule4_Msg">rule4 = rule4 = 1 ++ 2</Msg>
+
+<Msg name="Charcter_One">input_field</Msg>
+<Msg name="Charcter_Two">+|@$*()_=!;:}{.,\~`></Msg>
+<Msg name="Charcter_Three">_</Msg>
+
+<Msg name="Rule2Values">rule2 = 1 + 2 + 3\n</Msg>
+<Msg name="ConcatenateFunctionValue">CONCATENATE</Msg>
+
+<Msg name="AddOperator">+</Msg>
+
+<Msg name="ConditionalOperatorValue">NOT_NULL</Msg>
+<Msg name="IfThenElseValue">IF THEN ELSE</Msg>
+
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarRuleSum_DEscriVal1">1 + 1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarRuleSum_DEscriVal2">1 EQUAL 1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarRuleSum_DEscriVal3">CONCATENATE(1, 1)</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarRuleSum_DEscriVal4">LOOKUPIN COUNTY__COPRO RETURNING code_value WHERE code_desc = 1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarRuleSum_DEscriVal5">LENGTH(1)</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarRuleSum_DEscriVal6">AddressClean(1)</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarRuleSum_DEscriVal7">LOOKUPIN COUNTY__COPRO RETURNING code_desc WHERE prop_ind = 1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarRuleSum_DEscriVal8">LOOKUPIN COUNTY__COPRO RETURNING repl_value WHERE unv_code_value = 1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarRuleSum_DEscriVal9">IF Rule ID1 THEN 1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarRuleSum_DEscriVal10">LOOKUPIN COUNTY__COPRO RETURNING repl_value WHERE unv_code_value = </Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuileBuil_LookUpTabValThre">=</Msg>
+
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuileBuil_LookUpTabValSix">repl_value</Msg>
+
+
+<Msg name="VerifyRule1Vlaue">TRIM("MY RULE 1");</Msg>
+<Msg name="VerifyRule2Vlaue">"1" + "2" + "3";</Msg>
+<Msg name="VerifyRule3Vlaue">LEFT_JUSTIFY(rule2);</Msg>
+
+
+<Msg name="FileMgmt_LkpValue_ExclusionList_Element">LOOKUPIN COUNTY__AC RETURNING PROP_IND WHERE IRIS_CD_VAL = </Msg>
+
+<Msg name="ElementPositionText">Rule ID1</Msg>
+<Msg name="Arithmetic_Func">ADD(+)</Msg>
+<Msg name="Conditional_Func">AND</Msg>
+<Msg name="Formatting_Func_JOIN">JOIN</Msg>
+<Msg name="FileMgt_DefineGenerateField_NewField_FieldSearch_FieldNameValue_Complex2">TAXDIST</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuleBUilder_FunctionsDropDOwnVal">REPLACE_CHARACTERS</Msg>
+<Msg name="Repalce_Char_Function">REPLACE_CHARACTERS</Msg>
+<Msg name="FileMgmt_DefineGenField_Formatting_value1">input_field</Msg>
+<Msg name="FileMgmt_DefineGenField_Formatting_value2">+|@$*()_=!;:}{.,\~`?</Msg>
+<Msg name="FileMgmt_DefineGenField_Formatting_value4">rule1</Msg>
+<Msg name="FileMgmt_DefineSeqkey_AvailableField1">TAX_MAP_NO</Msg>
+<Msg name="null">null</Msg>
+<Msg name="Selected_Name2">EQUAL</Msg>
+
+<Msg name="Formatting_Name2">FIND_FIRST</Msg>
+<Msg name="Select_Value1">code_desc</Msg>
+<Msg name="Select_Value2">code_value</Msg>
+<Msg name="Miscellaneous1">INDEX_OF</Msg>
+<Msg name="Miscellaneous2">IMPLIED_DECIMAL</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMode_EnterRule12">rule2 = 1 + 2 + 3;</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMode_EnterRule13">rule3 = LEFT_JUSTIFY(rule2);</Msg>
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMode_EnterRule15">1 + 2 + 3</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMode_EnterRule16">LEFT_JUSTIFY(Rule ID2)</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMode_EnterRule17">rule2 = "1" + "2" + "3";</Msg>
+
+
+
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ReorderTab_Val3">REPLACE_CHARACTERS( , Rule ID1, Rule ID2)</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuileBuil_LookUpTabOption">COPRO</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuileBuil_LookUpTabVal">code_value</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_RuileBuil_LookUpTabValTwo">code_desc</Msg>
+<Msg name="CountyEditionSelection_FileManag_DefineKey_ExperMod_TxtOne">[SF:JUR]</Msg>
+<Msg name="CountyEditionSelection_FileManag_DefineKey_ExperMod_TxtTwo">[{boolean} AND {boolean}SF:JUR]</Msg>
+<Msg name="CountyEditionSelection_FileManag_DefineKey_ExperMod_TxtThree">[{CONCATENATE({any_type}, {any_type}, ...)boolean} AND {boolean}SF:JUR]</Msg>
+<Msg name="DDL_EqlEntry">EQUAL</Msg>
+
+
+
+<Msg name="ValueOfSecondVariable">testing</Msg>
+<Msg name="ValidMunccode">000</Msg>
+
+
+<Msg name="SingleLetterValue">B</Msg>
+<Msg name="TaxYear">2012</Msg>
+<Msg name="InvalidEmail">dsadsd</Msg>
+<Msg name="BlankCountyAssignto">israwat</Msg>
+<Msg name="StartsWithFewEdition">8</Msg>
+<Msg name="StartsWithFewAssignTo">atan</Msg>
+<Msg name="StartsWithFullEdtion">12</Msg>
+<Msg name="startswithz">z</Msg>
+
+<Msg name="startswithZX">zx</Msg>
+<Msg name="FileInduction_CountyName_splchars_value">$alabama</Msg>
+<Msg name="startswithALAB">alab</Msg>
+<Msg name="Startswith_ST_CLAIR">ST. CLAIR</Msg>
+<Msg name="FileInduction_CountyName_FullSplChars_value">st. clair</Msg>
+<Msg name="startswithst">st. </Msg>
+<Msg name="startswith*">*</Msg>
+<Msg name="L.H.S_Splcharthat_neverappears_LinkageMapping">nolinkage</Msg>
+<Msg name="firstletter_fileldname">c</Msg>
+<Msg name="Searchwith_last2letters_fileldname">br</Msg>
+<Msg name="Verify_last2letters_fieldname_search">BR</Msg>
+<Msg name="MappingSearch_SourceField_MiddleCharSearch">na</Msg>
+
+<Msg name="contains_middleletters_Filemgmttab">gnd</Msg>
+<Msg name="verify_txtafter_lettersearch_Filemgmttab">abv_gnd_sf</Msg>
+<Msg name="TransformfiledSelection">abv_gnd_sf</Msg>
+<Msg name="verify_splcharsin_Filemgmttab">_</Msg>
+<Msg name="FileMgmt_DefineGenField_Formatting_value3">_</Msg>
+<Msg name="ContainSearchSpecialChar">_</Msg>
+<Msg name="L.H.S_Splcharthat_appears_LinkageMapping">-</Msg>
+<Msg name="CommaDelimiter">,</Msg>
+<Msg name="DoubleQuote">"</Msg>
+<Msg name="DefineSeq_SaveFieldName_Space_Text"> </Msg>
+<Msg name="File_Induction_enter_Special_Character1">.</Msg>
+<Msg name="File_Induction_enter_Special_Character2">'</Msg>
+<Msg name="File_Induction_enter_Special_Character3">|</Msg>
+<Msg name="File_Induction_enter_Special_Character4">&amp;</Msg>
+
+<Msg name="ContainSearchDollar">$</Msg>
+
+
+
+<Msg name="Verify_txt_aftersearchWithACCTNBR">ACCTNBR</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_FieldNameTextBoxValue1">ACCTNBR</Msg>
+
+<Msg name="Verify_containswith_middleletters">rd</Msg>
+<Msg name="Verify_txt_aftersearch_middleletters">RECORDTYPE</Msg>
+<Msg name="verify_txtafter_splchars_search">HALFTAXES_A</Msg>
+<Msg name="Searchwith_firstseveral_letters_startswith">acc</Msg>
+<Msg name="Searchwith_underscore_startswith">halftaxes_</Msg>
+<Msg name="Txtafter_searchbtn">CLAY</Msg>
+<Msg name="Searchwith_firstseveral_lettersL.H.S">clay</Msg>
+<Msg name="MappingSearch_SourceField_NotPresentCharSearch">Clay</Msg>
+<Msg name="MappingSearch_LHSField_NotPresentCharSearch">Clay</Msg>
+<Msg name="Searchstring_uptosplchar">Clay-</Msg>
+<Msg name="MappingSearch_Source_StartsWith_SplCharSearch">Clay-</Msg>
+<Msg name="MappingSearch_Source_NotPresentSplCharSearch">Clay@</Msg>
+<Msg name="Txtafter_clickon_Nobtn_Sumary">TestFile1</Msg>
+<Msg name="CopyFile_Txtfldname">TestFile1</Msg>
+<Msg name="Fieldname_Value_defineGnrtefld">Test_Field1</Msg>
+<Msg name="FileMgmt_CopySourceFile_CopyName">RandomString</Msg><!-- TestFile12-->
+<Msg name="FileMgmt_CopySourceFile_CopyName_Stored">StoredString</Msg>
+<Msg name="VerifyFirst_field">HMSD</Msg>
+<Msg name="VerifyLast_Field">ADRSTR</Msg>
+<Msg name="Fieldname_Valueforsearch_DefinegenertFld">t</Msg>
+<Msg name="VerifyTxt_afterfields_areadded">FORFEIT, ADRSUF2, CAREOF, FORFEITCD, ADRSUF, FARMUSE</Msg>
+<Msg name="L.H.S_middleletter_LinkageMapping">la</Msg>
+<Msg name="LongText_RoutineName">qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</Msg>
+<Msg name="ExactLength">qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwert</Msg>
+<Msg name="TypeStringToBeSerached_p">P</Msg>
+<Msg name="SearchAddAll">p</Msg>
+<Msg name="SortMsg">p</Msg>
+
+<Msg name="MappingSearch_SrcField_NotPresentSplCharSrh">Pcl@</Msg>
+<Msg name="Job_field_Namesmall">ADAEQUAREee</Msg>
+<Msg name="TF_Cntains_firstletterSrch">A</Msg>
+<Msg name="TF_Cntains_middleletterSrch">ss</Msg>
+<Msg name="TF_Cntains_SplChar">assd_</Msg>
+<Msg name="TF_Cntains_NotSplChar">assd@</Msg>
+<Msg name="TR_Contains_SvrlChar">AssdM</Msg>
+<Msg name="TR_Contains_Spl_txt">assd_impv</Msg>
+
+<Msg name="Tab">${TAB}</Msg>
+<Msg name="True">true</Msg>
+<Msg name="TestValue1Result3">true</Msg>
+<Msg name="Flag">True</Msg>
+<Msg name="False">false</Msg>
+<Msg name="TestValue1Result2">false</Msg>
+<Msg name="DefineSeq_SaveFieldName_Text">1we</Msg>
+<Msg name="DefineSeq_SaveFieldName_SpecialChars_Text">%^we</Msg>
+<Msg name="DefineSeq_SaveFieldName_Success_Text">E4_</Msg>
+<Msg name="FileMgmt_CopySourceFile_FileName1">Master.Tab</Msg> 
+<Msg name="FileMgmt_CopySourceFile_CopyName1">TestFile13</Msg>
+<Msg name="FileMgmt_CopySourceFile_CopyName_Legal_SpecialChars">TestFile13{1}</Msg>
+<Msg name="FileMgmt_CopySourceFile_CopyName_SpecialChars">TestFile*</Msg>
+<Msg name="FileMgmt_CopySourceFile_CopyName_Spaces">Test %File 12</Msg>
+<Msg name="FileMgmt_CopySourceFile_CopyName_SpecialCharacter">Test'File</Msg>
+
+<Msg name="Reorder_MoveOrder">Before</Msg>
+
+
+<Msg name="Src_Field">TAXYR</Msg>
+<Msg name="Src_Field_ExpertMode">[SF:RECORD_NUMBER]</Msg>
+<Msg name="Define_Complex_Merge_Name">Cmerge1</Msg>
+<Msg name="Define_Complex_Merge_Name_SpecialCharsRemoved">Cmerge2</Msg>
+<Msg name="Define_Complex_Merge_Name_SpecialChars">Cmerge2\</Msg>
+<Msg name="Define_Complex_Merge_Name1">Cmerge3</Msg>
+<Msg name="Define_Complex_Merge_FileName1">Test21</Msg>
+<Msg name="Define_Complex_Merge_FileName2">Test22</Msg>
+<Msg name="Define_Complex_Merge_FileName3">Test23</Msg>
+<Msg name="Define_Complex_Merge_FileName4">Test24</Msg>
+<Msg name="Define_Complex_Merge_FileName5">Test26</Msg>
+<Msg name="Define_Complex_Merge_FileName_new">Test27</Msg>
+<Msg name="Define_Complex_Merge_FileName_new1">Test28</Msg>
+<Msg name="Define_Complex_Merge_FileName_new2">Test29</Msg>
+<Msg name="Define_Complex_Merge_FileName_new3">Test30</Msg>
+
+<Msg name="FileMgmt_LKPTable_Field">AC</Msg>
+<Msg name="Lookup2">AC</Msg>
+<Msg name="FileMgmt_DefineGenField_FieldName1">Test_GenField</Msg>
+<Msg name="FileMgmt_DefineGenField_FieldName2">Test_CtyEdn</Msg>
+<Msg name="FileMgmt_DefineSeqKey_SeqFieldName">Test_Seq</Msg>
+<Msg name="TransRuleSearch1">assd_land</Msg>
+<Msg name="Routine1">WV000SitAddrClean</Msg>
+<Msg name="Routine2">DollarToNum</Msg>
+<Msg name="BackSlash">A1\</Msg>
+<Msg name="ContainSearchText">q</Msg>
+<Msg name="File_Induction_enter_Value1">q</Msg>
+<Msg name="ContainTextMatchWord">quality</Msg>
+<Msg name="ContainSearchLastLetters">LE</Msg>
+<Msg name="ContainLastLettersMatchWord">mh_title</Msg>
+<Msg name="ReorderRowMsg">Rule ID3</Msg>
+<Msg name="Transform_Row1">LndDimAcresNbr_set</Msg>
+<Msg name="Transform_Row5">LndDimTxt_set</Msg>
+<Msg name="Transform_Last_Row1">LndDimSqFtNbr_set</Msg>
+<Msg name="PlaceHolder_TxtEntry">y5</Msg>
+<Msg name="CopyVersions_TxtEntry">21</Msg>
+
+<Msg name="Last_Element_Asendng">NC117_BSMTF.RT</Msg>
+<Msg name="ChangedName_TxtEntry2">2M</Msg>
+<Msg name="NameRoutine_TxtEntry1">Copy</Msg>
+<Msg name="ChangedName_TxtEntry">1&amp;M</Msg>
+<Msg name="ChangedName_TxtEntry3">1$M</Msg>
+<Msg name="FileInduction_CountyName_SeveralChars_value">con</Msg>
+<Msg name="FileInduction_CountyName_NotPresent_value">los angles</Msg>
+<Msg name="FileInduction_FipsCode_CountyNameVerify">BIBB</Msg>
+<Msg name="DefineLayout_FieldSearch_FieldName_SeveralLetterSearch">acre</Msg>
+<Msg name="DefineLayout_FieldSearch_FieldName_FullSearch">ag_dist</Msg>
+<Msg name="FieldSearch_FieldName_FullCharsVerify">ag_dist</Msg>
+<Msg name="DefineLayout_FieldSearch_FieldName_SplCharsSearch">EducExmptCd$</Msg>
+<Msg name="DefineLayout_FieldSearch_FieldName_NotPresentSearch">abv_gnb</Msg>
+<Msg name="FieldSearch_FieldName_Verify">CaptMatchInfo</Msg>
+<Msg name="FieldSearch_Field_GreaterNumVerify">19</Msg>
+<Msg name="DefineLayout_FieldSearch_Field_AlphaSplCharSearch">a@</Msg>
+<Msg name="DefineLayout_FieldSearch_Field_HigherNumSearch">2181</Msg>
+<Msg name="DefineLayout_FieldSearch_Field_MaxNumSearch">2180</Msg>
+<Msg name="FIPS_state_Datasort_Asc">AL</Msg>
+<Msg name="MappingSearch_LHSField_MiddleCharSearch">cl</Msg>
+<Msg name="MappingSearch_LHSField_SplCharSearch">Pcl_</Msg>
+<Msg name="MappingSearch_LHSField_SeveralCharSearch">Pcl</Msg>
+<Msg name="File_Induction_enter_Value3">zu</Msg>
+<Msg name="FIPS_Code_Data_Row1_Col1">06077</Msg>
+<Msg name="FIPS_County_Row1_col2">SAN JOAQUIN</Msg>
+<Msg name="FIPS_State_Row1_col3">CA</Msg>
+<Msg name="FIPS_Code_Data_Row2_Col1">13071</Msg>
+<Msg name="FIPS_Code_Data_Page2_Row5_Col1">26103</Msg>
+<Msg name="FIPS_County_Data_Page2_Row5_Col1">MARQUETTE</Msg>
+<Msg name="FIPS_County_Data_PageLast_Row2_Col2">MARQUETTE</Msg>
+<Msg name="FIPS_State_Data_Page2_Row5_Col1">MI</Msg>
+<Msg name="FIPS_Code_Data_PageLast_Row1_Col1">51735</Msg>
+<Msg name="FIPS_County_Data_PageLast_Row1_Col2">POQUOSON (CITY)</Msg>
+<Msg name="FIPS_State_Data_PageLast_Row1_Col3">VA</Msg>
+<Msg name="FIPS_Code_Data_PageLast_Row2_Col1">55077</Msg>
+<Msg name="FIPS_State_Data_PageLast_Row2_Col3">WI</Msg>
+<Msg name="FIPS_Code_Datasort_Dec">78030</Msg>
+<Msg name="FIPS_county_Datasort_Dec">ST. THOMAS</Msg>
+<Msg name="FIPS_state_Datasort_Dec">VI</Msg>
+<Msg name="FIPS_Code_Countysort_Dec">45001</Msg>
+<Msg name="FIPS_county_Countysort_Dec">ABBEVILLE</Msg>
+<Msg name="FIPS_state_Countysort_Dec">SC</Msg>
+<Msg name="FIPS_Code_Countysort_Asc">46137</Msg>
+<Msg name="FIPS_state_Countysort_Asc">SD</Msg>
+<Msg name="FIPS_Code_Statesort_Dec">02000</Msg>
+<Msg name="FIPS_county_Statesort_Dec">ALASKA</Msg>
+<Msg name="FIPS_state_Statesort_Dec">AK</Msg>
+<Msg name="FIPS_Code_Statesort_Asc">56000</Msg>
+<Msg name="FIPS_county_Statesort_Asc">WYOMING</Msg>
+<Msg name="FIPS_state_Statesort_Asc">WY</Msg>
+<Msg name="Time">04/30/2012 10:20:44</Msg>
+<Msg name="TransformMapping_Mapping_SourceDDownVal">accesory (FILE)</Msg>
+<Msg name="TransformMapping_Mapping_TargetFieldVal">xf_val_01</Msg>
+<Msg name="TransformRules_TransformFieldSearch_TrgtFieldVal">xf_val_01</Msg>
+<Msg name="LinkageRule_FileSelect">Prep_Key (CMERGE)</Msg> <!-- 37117-->
+<Msg name="LinkageFilecheck">Prep_Key (CMERGE)</Msg><!-- 37117-->
+<Msg name="LhsFld_1">Bld.txt (FILE)</Msg><!-- 37117-->
+
+<Msg name="MappingSearch_Source_MiddleCharSearch">ay</Msg> <!-- 54015-->
+<Msg name="MappingSearch_SrcField_Verify">CITYNAME</Msg> <!-- 54015-->
+<Msg name="MappingSearch_StartsWith_SeveralCharSearch">CITY</Msg> <!-- 54015-->
+<Msg name="MappingSearch_SrcField_SplCharSrh">Pcl_id</Msg> <!-- 54015-->
+<Msg name="MappingSearch_LHSField_Verify">Pcl_id</Msg> <!-- 54015-->
+
+
+<Msg name="TR_Targetfield_txt">AssdMineralValAmt</Msg> <!-- 54015-->
+<Msg name="TR_Contains_1st_text">AssdMineralValAmt</Msg><!-- 54015-->
+<Msg name="FirstRowText1">AssdMineralValAmt</Msg><!-- 54015-->
+<Msg name="FileMGMNT_SrcFileSelection_Confirmation">cama.tab successfully selected</Msg>
+<Msg name="DefineGenerateField_NewFieldName">New_Field</Msg>
+<Msg name="FileMgt_DefineGenerateField_NewField_FieldSearch_FieldNameValue">ownerid</Msg>
+<Msg name="FileMgt_DefineGenerateField_NewField_FieldSearch_Fields1">ownerid</Msg>
+<Msg name="TransformMapping_Mapping_SourceDDownVal_cama">cama.tab (FILE)</Msg>
+<Msg name="FileInduction_countyname_CLAY">clay</Msg>
+<Msg name="FileTransfer_NewEdition_File1">al67im7E5V1SUPP.txt</Msg>
+
+
+
+<Msg name="FileInduction_SchedlueFileInduction_RunNow_EmailId">skgundu@adaequare.com</Msg>
+<Msg name="FileInduction_SchedlueFileInduction_RenameValue">sandeep</Msg>
+<Msg name="FileInduction_SchedlueFileInduction_RenameValue_SplCharsN">$@ndeep**</Msg>
+<Msg name="FileInduction_SchedlueFileInduction_RenameValue_SplCharsY">sandeep##</Msg>
+<Msg name="EmptyCountyEdSelection_AssignedToVal"/>
+<Msg name="CntyEdSelection_FirstFewDigits_FIPSCode">540</Msg>
+
+
+<Msg name="CountyEditionSelectionCountyListDiffUserCountyName">AUTAUGA</Msg>
+<Msg name="CountyEditionSelectionCountyDiffUserListState">AL</Msg>
+
+
+<Msg name="CountyEditionSelectionCountyListDiffUserProductiontype">FA</Msg>
+<Msg name="CountyEditionSelectionCountyListDiffUserAssigntedTo">stkumar</Msg>
+<Msg name="CountyEditionSelectionCountyListDiffUserAssigntedTo_CompletedStatus">styagi</Msg>
+<Msg name="CountyEditionSelectionCountyList_Assignedto_MiddleValofuser">equa</Msg>
+<Msg name="CountyEditionSelectionCountyList_Assignedto_FirstFewLettofuser">adae</Msg>
+<Msg name="FileTransformation_TransformSet_SetName">area_set</Msg>
+<Msg name="FileTransformation_TransformSet_SetName1">xf_width_set</Msg>
+<Msg name="FileTransformation_TransformMapping_SelectSrc_Input">bldg_extra.tab (FILE)</Msg>
+<Msg name="FileTransformation_TransformRules_Msg">AbsenteeOwnrInd</Msg>
+<Msg name="FileTransformation_TransformRules_UnMappedMsg">none mapped</Msg>
+<Msg name="FileTransformation_TransformSet_SourceFields">Section.txt</Msg>
+<Msg name="FileTrans_TransSet_Sourcename">Section.txt</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_FirstBoxVal">fer_54</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_SecondBoxVal">GV43</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_ThirdBoxVal">QE90_Main</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_FourthBoxVal">WV000_NameAdd</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_FifthBoxVal">WV001_NameSubstract</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_NameTxtBox_Val1">g</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_NameTxtBox_Val2">Name</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_NameTxtBox_Val3">qe90_</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_NameTxtBox_Val4">fer</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_NameFirstBoxVal">AS60</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_NameFirstBoxValTwo">WV001_NameSubstract</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_DescripFirstBoxVal">Enter(0) to return adress</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_DescripFirstBoxValTwo">Routine_Desc1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_SixthBoxVal">CH60</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_SeventhhBoxVal">Routine_Test1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_NameSecondBoxVal">asd_50</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_Descrip">enter (6) to return</Msg>
+
+
+<Msg name="txtafter_firstletter_search">ZIP</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarDetial_NameTxtBoxBxVal">7y</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabSourceTabl_FieldNamFirstBoxval">ACCOUNT</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabSourceTabl_FieldNamFirstBoxvalTwo">ZIP1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_AvailableFldsTabl_FieldNamFirstBoxval">A1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_AvailableFldsTabl_FieldNamFirstBoxvalTwo">ZIPCODES</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetTable_SourcFldFirstBoxVal">&lt;none mapped&gt;</Msg>
+
+
+
+
+
+<Msg name="CountyEditionSelection_CountyList_FipsCode_Lastvalue">78030</Msg>
+<Msg name="CountyEditionSelectionCountyListFIPSCodeID2">30091</Msg>
+<Msg name="CountyEditionSelection_CountyList_FipsCodeVerification">55078</Msg>
+<Msg name="CountyEditionSelection_CountyList_FipsCodeVerification2">78030</Msg>
+<Msg name="CountyEditionSelection_CountyList_FipsCodeVerification3">78010</Msg>
+<Msg name="CountyEditionSelection_CountyList_FipsCode2">01003</Msg>
+
+
+<Msg name="CountyEditionSelection_CountyList_AssignedTo_StatusCompl_User">styagi</Msg>
+
+<Msg name="CountyEditionSelection_CountyList_CountyEdition_AssignedToDropDownChoice">akpandey</Msg>
+<Msg name="CountyEditionSelection_CountyList_CountyEdition_TaxYear">!@#$</Msg>
+<Msg name="CountyEditionSelection_FewDigitsOfFipsCode">78</Msg>
+
+
+<Msg name="CountyEditionSelection_BlankFipsCode"/>
+<Msg name="CountyEditionSelectionCountyList_Assignedto_MiddleValofuser2">brid</Msg>
+<Msg name="CountyEditionSelectionCountyListAssigntedTouser2">ebridges</Msg>
+<Msg name="CountyEditionSelectionCountyList_Assignedto_FirstFewLettofuser2">ebri</Msg>
+<Msg name="CountyEditionSelection_FileManagment_FilePropertiesTxt">Layout</Msg>
+
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_SortKeyTable2_FieldNameTextBoxValue1">ACRES</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_FiedNameTextBoxValue_">a</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_FiedNameTextBoxValue_FirstFewDigits">new</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_FiedNameTextBoxValue">newown</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_FiedNameTextBoxValue_FirstFewDigits2">addr</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_ListVal1">ADDR1</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_ListVal2">ADDR2</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_ListVal3">ADDR3</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_ExclusionRulBuild_DropDownValue1">CONCATENATE</Msg>
+<Msg name="Allpurpose_10numericvalue">10</Msg>
+
+
+
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_Reorder_FromTextBoxVal">3</Msg>
+
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_Reorder_DropDOwnChoic">Swap</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetsTable_FirstBoxVal">LndDimDepthNbr_set</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetSearch_FirstLetter">l</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetSearch_MiddleLetters">dim</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetSearch_FirstFewLetters">LndDim</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetSearch_SpecialCharacter">_</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetSearch_InvalidSpecialCharacter">?</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetSearch_InvalidLetter">xzy</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetsTable_LettersUntilSpecialCharacter">LndDimDepthNbr_</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetSearch_InvalidSpecialCharacter2">$</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformRules_TranformFieldTable_TargetField_FirstBoxVal">MuncExmptCntyCd</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformRules_TargetFIeldTxtBoxVal1">y</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformRules_TargetFIeldTxtBoxVal2">dim</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformRules_TargetFIeldTxtBoxVal3">c</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformRules_TargetFIeldTxtBoxVal4">lnddim</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformRules_TargetFIeld_FirstBxVal1">LndDimDepthNbr_set</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformRules_TargetFIeld_LastBxVal1">assd_land</Msg>
+
+<Msg name="Trgt_multiple_seletion_verify">assd_impv</Msg>
+
+<Msg name="fordelete_enternew_srcfield">NEW</Msg>
+<Msg name="TRuls_Verify_TextRecords_Des">tx_yr2</Msg>
+
+<Msg name="Record_verifyfor_1st_letter">CLASS</Msg>
+<Msg name="TranSets_asc_record">amenity_set</Msg>
+<Msg name="TranSets_Des_record">xf_yr_blt_set</Msg>
+
+<Msg name="CopyFIPS_TxtEntry">32597</Msg>
+<Msg name="Routine_TxtEntry">abstract</Msg>
+<Msg name="First_Element_Asendng">ABC</Msg>
+<Msg name="ReName_TxtEntry1">A1</Msg>
+<Msg name="ReName_TxtEntry2">A2</Msg>
+<Msg name="ReName_TxtEntry3">A3</Msg>
+<Msg name="ReName_TxtEntry4">A4</Msg>
+<Msg name="ReName_TxtEntry5">A5</Msg>
+<Msg name="ReName_TxtEntry6">A6</Msg>
+<Msg name="ReName_TxtEntry7">A7</Msg>
+<Msg name="ReName_TxtEntry8">A8</Msg>
+<Msg name="ReName_TxtEntry9">A9</Msg>
+<Msg name="ReName_TxtEntry10">A10</Msg>
+<Msg name="Charcter2">thewayitistobe</Msg>
+<Msg name="WrongSyntaxAlertMsg">Error at line#1:    Invalid parameter  | 2:</Msg>
+<Msg name="SelectionOfLHSFieldValue">property_location</Msg>
+<Msg name="SelectionOfRHSFieldValue">parcelid</Msg>
+<Msg name="SelectionOfRHSFieldValueTwo">map_code_lot</Msg>
+<Msg name="SelectionOfRHSFieldValueTHre">class</Msg>
+<Msg name="SelectionOfRHSFieldValueFour">state_class</Msg>
+<Msg name="SelectionOfRHSFieldValueFiv">card_no</Msg>
+<Msg name="SelectionOfRHSFieldValueSix">map_number</Msg>
+<Msg name="QuoteCharacter">"</Msg>
+<Msg name="DelimiterCharacter">,</Msg>
+<Msg name="TemplateValue">Template1</Msg>
+
+<Msg name="FileTransformation">NA</Msg>
+<Msg name="LHSClickD">Prep_Key</Msg>
+<Msg name="PaginationLabel">[First/Prev] 1, 2 [Next/Last]</Msg>
+<Msg name="AssertionValueForSecondPage">Prep_Key</Msg>
+
+<Msg name="TranSets_Lastclick_value">xf_set</Msg>
+<Msg name="TranSets_Firstclick_value">BldPermitAmt_set</Msg>
+<Msg name="TranSets_Nextclick_value">BldgXfGradeCd_set</Msg>
+<Msg name="TS_DisSets_Verify_SrcField">LndDimDepthNbr_set</Msg>
+<Msg name="TM_SrcFiled_value">LEGAL1</Msg>
+<Msg name="Priority_Value">3</Msg>
+
+<Msg name="Tax_Year_Value_verify">5401</Msg>
+<Msg name="FileInduction_FipsCode_StateVerify">DE</Msg>
+<Msg name="FileInduction_FipsCode_StateVerify1">AL</Msg>
+<Msg name="Job_field_Name">01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</Msg>
+<Msg name="TransRuleSearch">assd_total</Msg>
+<Msg name="Fieldname">ACB_NW</Msg>
+<Msg name="FieldName1">property_location</Msg>
+<Msg name="ValidCountyName">CLAY</Msg>
+<Msg name="ValidState">WV</Msg>
+
+<Msg name="Productiontype">FA</Msg>
+<Msg name="ValidEdition3">999</Msg>
+<Msg name="CntyEdSelection_LastTwoDigit_FIPSCode">15</Msg>
+<Msg name="CntyEdSelection_ProdType">FA</Msg>
+<Msg name="LastTwoDigitAssignTo">rraj</Msg>
+
+
+<Msg name="StartsWith5AssignTo">skashyap</Msg>
+<Msg name="CountyEditionSelectionCountyListDiffUserFIPSCodeID">01001</Msg>
+<Msg name="StartsWithFewTaxYear">2010</Msg>
+<Msg name="StartsWith5Year">2009</Msg>
+<Msg name="InvalidTaxYear">1950</Msg>
+<Msg name="ValidTaxYear">2011</Msg>
+<Msg name="contains0">0</Msg>
+<Msg name="contains77">77</Msg>
+<Msg name="contains01077">01077</Msg>
+<Msg name="contains108">108</Msg>
+<Msg name="contains01081">01081</Msg>
+<Msg name="COuntyEditionSelection_FIleManagment_FieldPropetys_FieldNameTextBoxValue">JUR</Msg>
+<Msg name="NON_Existing_FipsCode">abc</Msg>
+
+<Msg name="CountyName1">ZIEBACH</Msg>
+<Msg name="CountyName2">ALABAMA</Msg>
+<Msg name="LastTwoDigitCountyName">CALHOUN</Msg>
+<Msg name="AssignToAdminCountyName">BALDWIN</Msg>
+<Msg name="StartsWithFewCountyName">BERKELEY</Msg>
+<Msg name="StartsWith5CountyName">ACCOMACK</Msg>
+<Msg name="Search_Matching_Record">county_name</Msg>
+<Msg name="BlankCountyState">AL</Msg>
+<Msg name="StartsWith5State">VA</Msg>
+
+<Msg name="ContainSearchMiddilLetters">GE</Msg>
+<Msg name="ContainMiddilMatchWord">garage_sf</Msg>
+<Msg name="Search_Special_Char">county_edited</Msg>
+<Msg name="ContainSearchBlank"/>
+<Msg name="StartWith2letters">co</Msg>
+<Msg name="StartWithSpecial">county_</Msg>
+<Msg name="ExactFirstSeveral">PAR</Msg>
+<Msg name="ExactWithDollar">pcl$</Msg>
+
+
+<Msg name="CountyEditionSelection_FileTrnsfo_TransfMapp_TargFldTxtBxVal">BldPermitAmt_set</Msg>
+<Msg name="CountyEditionSelection_FileTrnsfo_TransfMapp_SourcFldTxtBxVal">NEWOWNAD1</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetNmaTxtBxVAl">bldp</Msg>
+<Msg name="Reorder_FromIndex1">229</Msg>
+<Msg name="FiledWithSpecialChars">-+---</Msg>
+
+<!--*********************************************-->
+<!--******* COUNTY SPECIFIC FILE NAMES **********-->
+<!--*********************************************-->
+<Msg name="LHS_Linkage_Mapping">Impr.txt (FILE)</Msg>
+<Msg name="CountyEditionSelection_FileTrnsfo_TransfMapp_SourcDropDOwVal">Clay-Asmt.txt (FILE)</Msg>
+<!-- 54015 COUNTY -->
+<Msg name="verify_txt_after_clickingon_sourcefile">Clay-Sherriff.txt successfully selected</Msg>
+<Msg name="CountyFile1">Clay-Sherriff.txt</Msg>
+<Msg name="CountyFile2">Clay-Sherriff.txt (FILE)</Msg>
+<Msg name="Verify_successful_selection_offile">full_cv_54015.txt successfully selected</Msg>
+<Msg name="CountyFile3">full_cv_54015.txt (FILE)</Msg>
+<Msg name="CountyFile4">full_cv_54015.txt (FILE):  acres</Msg>
+<Msg name="CountyFile5">Clay-Asmt.txt</Msg>
+<Msg name="CountyFile6">Clay-Asmt.txt (FILE)</Msg>
+<Msg name="CountyFile7">Clay-Asmt.txt [DRIVER]</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMod_TxtOne">[SF:Clay-Asmt.txt(FILE):JUR]</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMod_TxtThre">[{CONCATENATE({any_type}, {any_type}, ...)boolean} AND {boolean}SF:Clay-Asmt.txt(FILE):JUR]</Msg>
+<Msg name="Lhs_SelectValue_FileTransformation">Test24 (FILE)</Msg>
+<!-- 37117 COUNTY -->
+<Msg name="CountyFile9">Main_file.txt</Msg>
+<Msg name="CountyFile10">Main_file.txt (FILE) [DRIVER]</Msg>
+<Msg name="CountyFile11">Bld.txt (FILE)</Msg>
+<Msg name="CountyFile16">Bld.txt (FILE) [DRIVER]</Msg>
+<Msg name="CountyFile17">ComBld.txt (FILE) [DRIVER]</Msg>
+<Msg name="SelectionOfFileInRHS">ComBld.txt (FILE)</Msg>
+<!-- 13023 COUNTY -->
+<Msg name="CountyFile13">full_cv_13023.txt (FILE):  xf_val_01</Msg>
+<!-- 40125 COUNTY -->
+<Msg name="CountyFile14">full_cv_40125.txt (FILE):  apn</Msg>
+<Msg name="CountyFile15">full_cv_40125.txt</Msg>
+<Msg name="TS_DisSets_Verify_SetName">Clay-Asmt.txt (FILE):  LEGAL1</Msg>
+<Msg name="FileMgmt_DefineSeqkey_AvailableField2">OWNER_NAME2</Msg>
+<Msg name="FileMgmt_FieldName1">RECORD_ID_CODE</Msg>
+<Msg name="FileMgmt_FieldName2">TAX_MAP_NO</Msg>
+<Msg name="FileName">Bld.txt (FILE)</Msg>
+<Msg name="ExpectedFileNameWithDriver">Bld.txt (FILE) [DRIVER]</Msg>
+<Msg name="PageNumbers">[First/Prev] 1, 2, 3 [Next/Last]</Msg>
+<Msg name="FileOnSecondPageToBeAssert">Prep_Key</Msg>
+<Msg name="FileOnFirstPageToBeAssert">Main_file.txt</Msg>
+<Msg name="JobStatusFieldSelection">Completed</Msg>
+<Msg name="FIPSCodeValue">37117</Msg>
+<Msg name="WrongFIPSCodeValue">371178</Msg>
+<Msg name="JobControlHyperLink">Job Control</Msg>
+<Msg name="FileInductionJobsLink">File Induction Jobs</Msg> 
+<Msg name="FirstRow">parcelnb</Msg>
+<Msg name="LastRow">garage_type</Msg>
+<Msg name="NextFirstRow">basement_type</Msg>
+<Msg name="NextLastRow">rooftypeID</Msg>
+<Msg name="Type2">FILE</Msg>
+<Msg name="LastFirstRow">com_perimeter</Msg>
+<Msg name="SortedFirstRow">basement_type</Msg>
+<Msg name="SortedLastRow">bookpage4</Msg>
+<Msg name="SortedNextFirstRow">com_perimeter</Msg>
+<Msg name="SortedNextLastRow">main_porch_sf</Msg>
+<Msg name="SortedLastFirstRow">saleprice4</Msg>
+<Msg name="FieldNameNumber">7qw</Msg>
+<Msg name="IsNullConditionalValue">ISNULL</Msg>
+<Msg name="UpperCaseOperator">UPPER</Msg>
+<Msg name="LowerCaseValue">adaequare</Msg>
+<Msg name="LookUpOperator">AC</Msg>
+<Msg name="LookUpField1">COUNTY__AC</Msg>
+<Msg name="LookUpField2">code_value</Msg>
+<Msg name="LookUpField3">code_desc</Msg>
+
+
+
+
+
+<Msg name="Operator_Length">LENGTH</Msg>
+<Msg name="Value_Input">adaequaretech</Msg>
+<Msg name="OperatorUnderRoutinesTab">DollarToNum</Msg>
+<Msg name="ValueToConvert">50</Msg>
+<Msg name="TemplateName">merge</Msg>
+
+<Msg name="CopySrcFile_new">Line.txt</Msg> 
+<Msg name="FileMgmt_DefineLayout_Verify">0801999900000137</Msg>
+<Msg name="FielInduction_Job_Successfully_Msg">Job successfully submitted</Msg>
+<Msg name="FielInduction_Job_ErrorMsg">A File already exists on the server; rename the file(s) or check "Overwrite Existing File(s)</Msg>
+<Msg name="No_Errmsg">A File already exists on the server; rename the file(s) or check "Overwrite Existing File(s)"</Msg>
+<Msg name="Fieldname1">Asd</Msg>
+<Msg name="NewRule">rule2 = TRIM_ALL(rule1);</Msg>
+<Msg name="ExpertRule1">rule1 = TRIM("MY RULE 1");\nrule2 = 1 + 2 + 3;\n</Msg>
+<Msg name="SelectLEFT_JUSTIFY">LEFT_JUSTIFY</Msg>
+<Msg name="RuleSavemsg">Saving this rule may result in a loss of formatting done in Expert Mode. Do you want to Save?</Msg>
+
+<Msg name="Tirm_MYRule1Text">TRIM(MY RULE 1)</Msg>
+<Msg name="Rule2Text">1 + 2 + 3</Msg>
+<Msg name="Rule3Text">LEFT_JUSTIFY(Rule ID2)</Msg>
+
+
+<Msg name="ExpertReorderRules">Reordering may result in a loss of formatting done in Expert Mode. Do you want to Reorder?</Msg>
+<Msg name="ExpertMode_RuleDelete_Msg">Deleting this rule may result in a loss of formatting done in Expert Mode. Do you want to Delete?</Msg>
+
+<Msg name="ExpertMode_SucessMsg">Expert mode successfully saved</Msg>
+<Msg name="NextRowText1">MuncExmptCntyCd</Msg>
+<Msg name="LastRowText1">tx_yr2</Msg>
+<Msg name="DesendingLastRow1">apn</Msg>
+<Msg name="DesendingFirstRowLast">st_use</Msg>
+<Msg name="AssendingLastRowLast">txbl_val</Msg>
+<Msg name="AssendingLastRow1">tx_yr2</Msg>
+<Msg name="ConvertName">fer_54</Msg>
+<Msg name="RoutineSelectFun">REMOVE_CHARACTERS</Msg>
+<Msg name="listboxText">map</Msg>
+<Msg name="Space"> </Msg>
+<Msg name="RoutineModifiedRule">REMOVE_CHARACTERS(map, )</Msg>
+<Msg name="RoutineNewName">Abcd</Msg>
+<Msg name="RoutineNewDescription">This is for testing</Msg>
+<Msg name="ForTestRules">alt_apn</Msg>
+
+<Msg name="ReorderTextBoxMsg3">3</Msg>
+<Msg name="ReorderTextBoxMsg4">6</Msg>
+<Msg name="Reorder_Rules_Msg">Reorder Rules</Msg>
+<Msg name="FlagFalse">False</Msg>
+<Msg name="Reorder_Move">Rule ID2</Msg>
+
+<Msg name="ShowResult15">15</Msg>
+<Msg name="GroupTestResult15">30</Msg>
+
+
+<Msg name="RunTransformNextMsg1">LndDimTypeCd_set</Msg>
+<Msg name="RunTransformNextMsg2">acct_nbr</Msg>
+
+
+<Msg name="RunTransformLastMsg1">xf_yr_blt_set</Msg>
+<Msg name="RunTransformLastMsg2">yr_blt</Msg>
+<Msg name="RunTransformFirstMsg1">LndDimAcresNbr_set</Msg>
+<Msg name="RunTransformFirstMsg2">LndDimTxt_set</Msg>
+<Msg name="RunTransformSourceLimit">100</Msg>
+<Msg name="RunTransformRowLimitErrMsg">The CVD for this County is missing</Msg>
+
+<Msg name="ImproperEmail">abcd</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_FieldsNameLink_FirstTexboxValue">ACCOUNTNBR</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_FieldsNameLink_LastTexboxValue">ZIP</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_SortKeyTable_FieldNameTextBoxValue1">TIFFNBR</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_FieldNameTextBoxValue2">ACCTENTRY</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_FieldNameTextBoxValue3">ACCOUNTNBR</Msg>
+<Msg name="LookUpOperator_APNEX">APNEX</Msg>
+<Msg name="LookUpField_IRIS_CD_VAL">code_desc</Msg>
+<Msg name="LookUpField_PROP_IND">prop_ind</Msg>
+<Msg name="LookUpField_UNV_CD_VAL">unv_code_value</Msg>
+<Msg name="Replace_Char">+|@$*()_=!;:}{.,\~`>?</Msg>
+
+
+<Msg name="Select_Value5">repl_value</Msg>
+
+<Msg name="Fieldname_Asd3">Asd3</Msg>
+<Msg name="Search_Mapped_Record">fi_acres</Msg>
+
+<Msg name="FileTrans_TrgtFieldname">full_cv_40125.txt (FILE):  fi_acres</Msg>
+<Msg name="TR_Srcfield_txt">cama.tab (FILE):  Asd4</Msg>
+<Msg name="SearchWithContains">equare</Msg>
+<Msg name="SearchWithStartsWith">ad</Msg>
+
+<Msg name="LastRowText5">txbl_val</Msg>
+
+<Msg name="TransformRules_TransformFieldSearch_TrgtFieldVal1">apn</Msg>
+<Msg name="MappingSearch_LHSField_NotPresentSplCharSearch">Pcl$</Msg>
+<Msg name="TM_FullCV_Text">full_cv_54015.txt (FILE)</Msg>
+<Msg name="FileMgmt_ExpertMode_AddingRules">rule1 = TRIM("MY RULE 1");rule2 = 1 + 2 + 3;</Msg>
+<Msg name="Conditional_Func1">EQUAL</Msg>
+
+<Msg name="FileTransformation_ArithmeticRule">4 + 4</Msg>
+<Msg name="DefineGenerated_Verify_Data">state_code, county_name, account, format, ID</Msg>
+<Msg name="CountyEditionSelectionCountyListFIPSCodeID">40125</Msg>
+<Msg name="CountyEditionSelectionCountyListState">OK</Msg>
+<Msg name="CountyEditionSelectionCountyListCountyName">POTTAWATOMIE</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_ListValue1">NEWOWN</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_ListValue2">NEWOWNAD1</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_ListValue3">NEWOWNAD2</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_ListValue4">NEWOWNAD3</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_ListValue5">NEWBOOK</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_FieldSearch_ListValue6">NEWPAGE</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_SortKeyTable2_FieldNameTextBoxValue2">ACCTENTRY</Msg>
+
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_SortKeyTable2_FieldNameTextBoxValue4">ACCOUNTNBR</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetsTable_SecondBoxVal">LndDimFrontNbr_set</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformSets_DIstributableSetTable_ThirdBoxVal">LndDimSqFtNbr_set</Msg>
+<Msg name="lastElementSort">Xfeat.RT</Msg>
+<Msg name="SortCheckFields">fireplace, mapno, main_porch_type, main_porch_sf, basement_type, proptypeID, garage_type, parcelnb, rooftypeID, proptypeDescr, bookpage4, saleprice4, bookpage2, saleprice3, bookpage3, saleprice2, bookpage1, rooftypeDescr, landdepth, saleprice1,com_perimeter</Msg>
+							
+<Msg name="OnChange_Remove1">proptypeID</Msg>
+<Msg name="OnChange_Remove2">proptypeDescr</Msg>
+<Msg name="Fieldname_UpdatedVal_Asd4">Asd4</Msg>
+
+<Msg name="Routine_Name_abc">ABC</Msg>
+<Msg name="FileInduction_Location_Name">QDA County Files Location</Msg>
+<Msg name="FileInduction_Edition_Msg">999</Msg>
+
+
+
+<Msg name="FileInduction_NewFile_Name">Test321</Msg>
+<Msg name="Routinename_withSplchar">RandomStringSpl</Msg>
+<Msg name="Routinename_withSpace">RandomStringSpace</Msg>
+
+
+<Msg name="Rename_Symbols">/@#</Msg>
+<Msg name="Rename_Symbols_ErrMsg">The following File Name(s) contains illegal characters:</Msg>
+
+<Msg name="Rename_Blank_Err">New Name is required when Rename is checked</Msg>
+
+
+<Msg name="Rule_Success_Msg">Transform Rule successfully saved</Msg>
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMode_EnterRule18">rule1 = TRIM("MY RULE 1");rule2 = "1" + "2" + "3";rule3 = LEFT_JUSTIFY(rule2);</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExpertMode_Rule">rule3 = REPLACE_CHARACTERS("", " ", "+|@$*()_=!;:}{.,\\~`>?", " ");</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_FieldNameTexBoxLastValue">TOTALVALUE</Msg>
+<Msg name="CountyEditionSelection_FileManagment_DefineKey_AvailableFieldsTable_LastPageMessage">* Available Fields found, displaying *.</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMode_EnterRule1">rule1 = TRIM("MY RULE 1");rule2 = 1 + 2 + 3;</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMod_InValidSyntaxmsg">Error at line#1:    Invalid statement  | TRIM(MY RULE 1)</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_EmptyFldMsg">To add Exclusion Rules, refer to the Info tab in the Exclusion Rule Builder section above.</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExpertMode_RuleSeven">rule1 = REPLACE_CHARACTERS</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExpertMode_RuleEight">rule2 = TRIM_ALL(rule1);</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExpertMode_RuleSix">rule6 = RT:AddressClean(rule1)</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExperMod_TxtTwo">[{boolean} AND {boolean}SF:Clay-Asmt.txt(FILE):JUR]</Msg>
+<Msg name="SelectionOfFileInRHS_Prep_Key">Prep_Key (CMERGE)</Msg>
+<Msg name="SelectionOfLHSFieldValue_parcelid">parcelid</Msg>
+<Msg name="SelectionOfRHSFieldValue_Prep_Parcel">Prep_Parcel</Msg>
+<Msg name="SelectionOfRHSFieldValuTwo">land_type1</Msg>
+<Msg name="SelectionOfRHSFieldValuThree">land_type2</Msg>
+<Msg name="SelectionOfRHSFieldValuFour">land_type3</Msg>
+<Msg name="SelectionOfRHSFieldValuFive">land_type4</Msg>
+<Msg name="SelectionOfRHSFieldValuSix">land_type5</Msg>
+<Msg name="SelectionOfRHSFieldValuSeven">land_type6</Msg>
+
+
+<Msg name="SelectionOfRHSFieldValue_Com_Are">ComArea.txt (FILE)</Msg>
+<Msg name="SelectionOfRHSFieldValue_Com">ComArea.txt</Msg>
+<Msg name="SelectionOfRHSFieldValue_Com_Two">Res.txt (FILE)</Msg>
+<Msg name="SelectionOfLHSFieldValue_map_code_lot">map_code_lot</Msg>
+<Msg name="SelectionOfRHSFieldValue_BLD_ID">BLD_ID</Msg>
+<Msg name="SelectionOfLHSFieldValue_class">class</Msg>
+<Msg name="SelectionOfRHSFieldValue_SECNBR">SECNBR</Msg>
+<Msg name="LHSClickA">Prep_Key</Msg>
+<Msg name="LHSField_ValueAsc">BLD_ID</Msg>
+<Msg name="LHSField_ValueDesc">SECNBR</Msg>
+<Msg name="Type">CMERGE</Msg>
+<Msg name="RHS_AscValue">Xf_key</Msg>
+<Msg name="RHS_DescValue">Bld.txt</Msg>
+<Msg name="JobCtrl_FileIndJobs">File Induction Job List</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_NoJobsInfo">No County Edition Jobs Found.</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_TransformRules_TargetFIeldTxtBoxVal5">acres</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_EmptyFldMsg1">To add Job Variable Rules, refer to the Info tab in the Job Variable Rule Builder section above.</Msg>
+<Msg name="FileMgmt_ExpertMode_VerifyMsg1">"4" + "4";</Msg>
+<Msg name="FileMgmt_ExpertMode_VerifyMsg2">EQUAL("4", [SF:Section.txt (FILE): BLDTYPE]);</Msg>
+<Msg name="FileMgmt_ExpertMode_VerifyMsg3">FIND_FIRST("4", [SF:Section.txt (FILE): BLDTYPE]);</Msg>
+<Msg name="FileMgmt_ExpertMode_VerifyMsg4">LOOKUP("COUNTY__AC", "prop_ind", "code_desc", "=", "4");</Msg>
+<Msg name="FileMgmt_ExpertMode_VerifyMsg_1">EQUAL("4", [SF:DWELLNO]);</Msg>
+<Msg name="FileMgmt_ExpertMode_VerifyMsg_2">FIND_FIRST("4", [SF:DWELLNO]);</Msg>
+
+<Msg name="TransformMapping_Mapping_SourceFieldVal_Complex">ACCOUNT</Msg>
+<Msg name="TransformRules_TransformFieldSearch_TrgtFieldVal_Complex1">AcNbr</Msg>
+<Msg name="FileMGMNT_SrcFileSelection_Confirmation_Complex2">Clay-Asmt.txt successfully selected</Msg>
+
+
+
+
+<Msg name="ConvertDesc">This Rountine only for testing</Msg>
+<Msg name="ConvertSourceField">Abcdef</Msg>
+<Msg name="CountyFile8">Clay-Asmt.txt (FILE): MINNATRES</Msg>
+<Msg name="AssendingFirstRowLast">assd_land</Msg>
+<Msg name="FirstRowText5">LndDimSqFtNbr_set</Msg>
+<Msg name="NextRowText5">apn</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExpertMode_Rule1">TRIM_ALL(rule1)</Msg>
+<Msg name="CountyEditionSelection_JobVarDesc">Attribute</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs">County Edition Jobs</Msg>
+<Msg name="FiledNameValue">aaa</Msg>
+<Msg name="MappingSummary_TotalFldsFound">* Linkage Mappings found, displaying * to *.</Msg>
+
+<Msg name="GeneratedFileds_NewlyAdded">total_fireplace, total_fixtures, total_rooms, type, total_living_area</Msg>
+<Msg name="GeneratedFileds_ConcatenaedRecord">CONCATENATE(type, total_rooms, total_fireplace, total_living_area, total_fixtures)</Msg>
+<Msg name="GeneratedFileds_ArithmeticRecord">type + total_rooms + total_fireplace + total_living_area + total_fixtures</Msg>
+<Msg name="GeneratedFileds_ConditionalRecord">type CONTAINS total_rooms OR total_fireplace OR total_living_area OR total_fixtures</Msg>
+<Msg name="GeneratedFileds_LookupRecord">LOOKUPIN COUNTY__APNEX RETURNING code_desc WHERE code_value = type</Msg>
+<Msg name="NavigationMsg">This page is asking you to confirm that you want to leave - data you have entered may not be saved.</Msg>
+<Msg name="verifyRule1">REPLACE_CHARACTERS("", " ", "+|@$*()_=!;:}{.,\\~`>?", " ");</Msg>
+<Msg name="verifyRule2">TRIM_ALL(rule1);</Msg>
+<Msg name="ExpertRules">rule1 = "1" + "2" + "3";rule2 = TRIM("MY RULE 1");rule3 = LEFT_JUSTIFY(rule1);</Msg>
+<Msg name="ExpertMode_AllTab_Rules1">"10" + [SF:Clay-Asmt.txt (FILE): MINBLDG];</Msg>
+<Msg name="ExpertMode_AllTab_Rules2">CONTAINS("", "10", [SF:Clay-Asmt.txt (FILE): MINBLDG]);</Msg>
+<Msg name="ExpertMode_AllTab_Rules3">CONCATENATE("10", [SF:Clay-Asmt.txt (FILE): MINBLDG]);</Msg>
+<Msg name="ExpertMode_AllTab_Rules4">LOOKUP("COUNTY__APNEX", "code_desc", "code_value", "=", [SF:Clay-Asmt.txt (FILE): MINBLDG]);</Msg>
+<Msg name="ExpertMode_AllTab_Rules5">INDEX_OF("10", [SF:Clay-Asmt.txt (FILE): MINBLDG]);</Msg>
+<Msg name="ExpertMode_AllTab_Rules6">RT:WV000SitAddrClean("10");</Msg>
+
+<Msg name="RuleError">rule1 = 1 + 2 + 3</Msg>
+<Msg name="GeneratedFileds_LookupRecord2">LOOKUPIN COUNTY__APNEX RETURNING code_desc WHERE prop_ind = type</Msg>
+<Msg name="GeneratedFileds_LookupRecord3">LOOKUPIN COUNTY__APNEX RETURNING repl_value WHERE unv_code_value = type</Msg>
+<Msg name="GeneratedFileds_MiscRecord">LENGTH(type)</Msg>
+<Msg name="GeneratedFileds_RoutineDDValue">AddressClean</Msg>
+<Msg name="GeneratedFileds_RoutineRecord">AddressClean(type)</Msg>
+<Msg name="FileMgmt_CopySourceFile_CopyName_MaxLength">TestFile1301234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</Msg>
+<Msg name="TrimAll_EpertMode_Verify_Rules1">rule1 = "10" + [PH:y5];</Msg>
+<Msg name="TrimAll_EpertMode_Verify_Rules2">rule2 = EQUAL("10", [PH:y5]);</Msg>
+<Msg name="TrimAll_EpertMode_Verify_Rules3">LOOKUP("COUNTY__COPRO", "code_desc", "code_desc", "=", [PH:y5]);</Msg>
+<Msg name="TrimAll_EpertMode_Verify_Rules4">rule4 = MAX("10", "10");</Msg>
+<Msg name="DefineLayout_RawFileView_Value">"property_location"</Msg>
+<Msg name="DefineLayout_FileLaoutView_Value">VAC LOT MIDDLE ST</Msg>
+<Msg name="AssertionValueForPagination">property_location</Msg>
+<Msg name="Fieldname_New">property_location</Msg>
+
+<Msg name="FileMgmt_CopySourceFile_CopyName_sdp">aaa.txt</Msg>
+<Msg name="FileInduction_FileTransferlocation">achan</Msg>
+
+
+
+
+
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExpertMode_Ruleone">rule1 = "1" + "1";</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExpertMode_RuleTwo">rule2 = EQUAL(rule1, rule1);</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExpertMode_RuleThre">rule3 = CONCATENATE(rule1, rule1);</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExpertMode_RuleFour">rule4 = LOOKUP("COUNTY__COPRO", "code_value", "code_desc", "=", rule1);</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_ExpertMode_RuleFive">rule5 = LENGTH(rule1);</Msg>
+
+<Msg name="CountyEditionSelection_FileTeansform_JobVariabTAb_JobVarList_FirstBxVal">Job1</Msg>
+
+
+<Msg name="FormatingTab">Formatting</Msg>
+<Msg name="VerifyExpertRule2">rule2 = CONCATENATE("10", [SF:misc_check_for_grg_caprot (FILE): account]);</Msg>
+
+<Msg name="VerifyExpertRule1">rule1 = EQUAL("10", [SF:misc_check_for_grg_caprot (FILE): account]);</Msg>
+<Msg name="EnterValue_Txtfld##1">##1</Msg>
+<Msg name="EnterValue_Txtfld#1">#1</Msg>
+
+
+<Msg name="FileTransformation_Src_Field_51045">OWNTYPE1</Msg>
+<Msg name="FileTransformation_Tgt_Field_51045">addl_lot_info2</Msg>
+
+<Msg name="FileTransformation_Src_Field_Changed_51045">OWNTYPE_1</Msg>
+
+<Msg name="Name_Newton">NEWOWN</Msg>
+
+<Msg name="RMV_Verify_Text_TM">could be removed.</Msg>
+<Msg name="CountyEditionSelection_FileTeansform_Routines_ROutinListTable_DescripFirstBox"/>
+<Msg name="Layout_StartPositin">id</Msg>
+<Msg name="Layout_StartPositin2">at</Msg>
+<Msg name="StaticReportMsg">xxxxx</Msg>
+<Msg name="Error_Orphanrows">XXXX</Msg>
+
+
+<!-- 1110 to 1113 -->
+<Msg name="JobCtrl_CntyEdtnJobs_SubmittedBy">Admin</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_Status_Running">Running</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_Name_AscValue">NameAscVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_Name_DescValue">NameDescVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_Status_AscValue">StatusAscVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_Status_DescValue">StatusDescVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_SubmittedBy_AscValue">SubmittedByAscVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_SubmittedBy_DescValue">SubmittedByDescVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_SubmittedDate_AscValue">SubmittedDateAscVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_SubmittedDate_DescValue">SubmittedDateDescVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_ScheduledTime_AscValue">ScheduledTimeAscVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_ScheduledTime_DescValue">ScheduledTimeDescVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_StartTime_AscValue">StartTimeAscVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_StartTime_DescValue">StartTimeDescVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_EndTime_AscValue">EndTimeAscVale</Msg>
+<Msg name="JobCtrl_CntyEdtnJobs_EndTime_DescValue">EndTimeDescVale</Msg>
+<Msg name="JobCtrl_FileInductionJobs_RecordInfo">* File Induction Jobs found, displaying *</Msg>
+
+
+<Msg name="NametoCvViewer">NewCVViewer</Msg>
+<Msg name="CVViewer_Description">This is some text in description</Msg>
+<Msg name="CVViewer_Columns">Column1</Msg>
+<Msg name="FTrans_JV_JVDetail_Name">msg1</Msg>
+<Msg name="FTrans_JV_JVDetail_Desc">msg12</Msg>
+<Msg name="Transform_Rule_SummaryNewRecord">msg13</Msg>
+<Msg name="FTrans_JV_JVDetail_UpdatedName">msg14</Msg>
+<Msg name="Transform_Rule_SummaryUpdatedRecord">msg15</Msg>
+<Msg name="FileMgmt_LkpValue_ExclusionList_Element1">Please insert a valid value</Msg>
+
+
+
+
+</Messages>

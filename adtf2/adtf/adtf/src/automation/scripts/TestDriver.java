@@ -1,0 +1,319 @@
+/*******************************************************************
+ * A user specified class, where the test cases are executed
+ * by performing mapping to the tables like Object Reference, 
+ * Component Reference and Hash-Map Tables from Test-case tables
+ *******************************************************************/
+
+package automation.scripts;
+
+import java.io.File;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriverException;
+import org.testng.Assert;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.adaequare.testng.adtf.testng.beans.TestSteps;
+
+public class TestDriver extends Components {
+
+	public Logger logger = Logger.getRootLogger();
+	public String testCasesFile;
+	public String testDetailsFile;
+	public String testStepsFile;
+	public String MessagesFile;
+	public String ObjectReferenceFile;
+	Map<String, List<TestSteps>> testStepsMap;
+
+	Map<String, Integer> stepRepeatMap;
+	Map<String, List<String>> testDetailsMap;
+	SeleniumXMLParser xmlParser;
+	Map<String, String> msgMap;
+	Map<String, String> objMap;
+	String screenCapturePath;
+
+	@Parameters({ "path", "project", "module", "suitename", "time" })
+	@BeforeSuite
+	public void initializeDataFiles(String path, String project, String module,
+			String suiteName, String imgFolderTimeStamp) throws Exception {
+
+		String imagesFolderStr = path + File.separator + "data"
+				+ File.separator + "projects" + File.separator + project
+				+ File.separator + "test-output" + File.separator + "images";
+		File imagesFolder = new File(imagesFolderStr);
+
+		if (!imagesFolder.exists()) {
+			imagesFolder.mkdir();
+		}
+
+		screenCapturePath = imagesFolderStr + File.separator
+				+ imgFolderTimeStamp;
+		File sp = new File(screenCapturePath);
+		if (!sp.exists()) {
+			sp.mkdir();
+		}
+
+		logger.info("	initializing data files ");
+
+		String mainPath = path + File.separator + "data" + File.separator
+				+ "projects" + File.separator + project + File.separator;
+
+		String xmlFilesPath = mainPath + "test-input" + File.separator;
+
+		testCasesFile = mainPath + "configs" + File.separator + suiteName
+				+ File.separator + suiteName + "_" + module + ".xml";
+
+		testDetailsFile = xmlFilesPath + File.separator + "TestDetails.xml";
+
+		testStepsFile = xmlFilesPath + File.separator + "TestSteps.xml";
+
+		MessagesFile = xmlFilesPath + File.separator + "Messages.xml";
+
+		ObjectReferenceFile = xmlFilesPath + File.separator
+				+ "ObjectReference.xml";
+
+		xmlParser = new SeleniumXMLParser();
+
+		logger.info("###      VALIDATING FILES STARTED   ###");
+		logger.info("validating  TestSteps.xml  file");
+		testStepsMap = xmlParser.getTestStepsMap(testStepsFile);
+
+		stepRepeatMap = xmlParser.getStepReaptMap(testStepsFile);
+
+		logger.info("validating  TestDetails.xml  file");
+		testDetailsMap = xmlParser.getTestDetailsMap(testDetailsFile);
+
+		logger.info("validating  Messages.xml  file");
+		msgMap = xmlParser.getMessageInfo(MessagesFile);
+		msgMap.put("NA", "NA");
+
+		logger.info("validating  ObjectReference.xml  file");
+		objMap = xmlParser.getObjectReferences(ObjectReferenceFile);
+		objMap.put("NA", "NA");
+
+		xmlParser.validateTestSteps(testStepsMap, msgMap, objMap);
+		logger.info("###      VALIDATION OF XML FILES COMPLETED   ###");
+
+	}
+
+	@DataProvider(name = "testCaseList")
+	public Iterator<Object[]> testCases() throws Exception {
+		logger.info("  ############################################################  ");
+		logger.info("  ACTUAL EXECUTION OF TEST CASES STARTS FROM HERE  ");
+		logger.info("  ############################################################  ");
+		List<Object[]> data = new ArrayList<Object[]>();
+		try {
+
+			List<String> list = xmlParser.getTestsToExecute(testCasesFile);
+
+			for (String line : list) {
+				data.add(new Object[] { line });
+			}
+
+		} catch (Exception e) {
+			// Assert.fail("Loading of Test Cases Skipped.");
+		}
+
+		return data.iterator();
+	}
+
+	@SuppressWarnings("all")
+	@Test(dataProvider = "testCaseList")
+	public void executeTest(Object testCase) throws Exception {
+		String testCaseName = testCase.toString();
+		try {
+
+			logger.info("  #####  TEST CASE NAME :::  " + testCase
+					+ "  #####  ");
+			Class clazz = Class.forName("automation.scripts.Components");
+
+			Components object = (Components) clazz.newInstance();
+
+			Method[] methods = clazz.getDeclaredMethods();
+
+			ThreadLocal<List<String>> testDetailThread = new ThreadLocal<List<String>>();
+
+			testDetailThread.set(testDetailsMap.get(testCaseName));
+
+			for (String testDetail : testDetailThread.get()) {
+
+				int repeatCount = stepRepeatMap.get(testDetail);
+
+				logger.info("   @@@  TEST STEP  NAME   ::: " + testDetail
+						+ "    [    REPEAT COUNT = " + repeatCount
+						+ "   ]    @@@  ");
+
+				for (int repeat = 0; repeat < repeatCount; repeat++) {
+
+					ThreadLocal<List<TestSteps>> testStepsThread = new ThreadLocal<List<TestSteps>>();
+					testStepsThread.set(testStepsMap.get(testDetail));
+
+					for (TestSteps ts : testStepsThread.get()) {
+
+						synchronized (ts) {
+
+							for (Method method : methods) {
+								
+								if (method.getName().equalsIgnoreCase(
+										ts.getActionName())) {
+
+									try {
+
+										if (ts.getComponentName()
+												.equalsIgnoreCase("NA")) {
+
+											method.invoke(object, msgMap.get(ts
+													.getMessageName()));
+
+											logger.info("Executing  Action:  ["
+													+ ts.getActionName()
+													+ " ] , [Message: "
+													+ ts.getMessageName()
+													+ " = "
+													+ msgMap.get(ts
+															.getMessageName())
+													+ " ] ");
+
+										} else if (ts.getMessageName()
+												.equalsIgnoreCase("NA")) {
+											method.invoke(object, objMap.get(ts
+													.getComponentName()));
+
+											logger.info("Executing  Action: [ "
+													+ ts.getActionName()
+
+													+ " ],   [Object : "
+													+ ts.getComponentName()
+													+ " = "
+													+ objMap.get(ts
+															.getComponentName())
+													+ " ] ");
+
+										} else {
+											method.invoke(object, objMap.get(ts
+													.getComponentName()),
+													msgMap.get(ts
+															.getMessageName()));
+											selenium.get(Thread.currentThread()).windowFocus();
+											logger.info("Executing  Action:  ["
+													+ ts.getActionName()
+													+ " ] , [Message: "
+													+ ts.getMessageName()
+													+ " = "
+													+ msgMap.get(ts
+															.getMessageName())
+													+ " ],  [Object : "
+													+ ts.getComponentName()
+													+ " = "
+													+ objMap.get(ts
+															.getComponentName())
+													+ " ]");
+
+										}
+
+									} catch (AssertionError error) {
+
+										Assert.fail(error.getMessage());
+										logger.error(error.getMessage());
+										skipCurrentStep(testCaseName);
+
+										testStepsThread
+												.set(new ArrayList<TestSteps>());
+										break;
+									} catch (WebDriverException w) {
+
+										Assert.fail(w.getMessage());
+										logger.error(w.getMessage());
+
+										skipCurrentStep(testCaseName);
+										testStepsThread
+												.set(new ArrayList<TestSteps>());
+										break;
+									} catch (InvocationTargetException targetException) {
+										skipCurrentStep(testCaseName);
+										Assert.fail("ERROR WHILE EXECUTING TEST STEP ::: ["
+												+ testDetail
+												+ " ] "
+												+ " , ACTION  : {"
+												+ ts.getActionName()
+												+ "} , {OBJECT  :  "
+												+ ts.getComponentName()
+												+ " = "
+												+ objMap.get(ts
+														.getComponentName())
+												+ "},  { MESSAGE  :  "
+												+ ts.getMessageName()
+												+ " = "
+												+ msgMap.get(ts
+														.getMessageName())
+												+ "}");
+
+										logger.error("ERROR WHILE EXECUTING TEST STEP ::: ["
+												+ testDetail
+												+ " ] "
+												+ " , ACTION  : {"
+												+ ts.getActionName()
+												+ "} , {OBJECT  :  "
+												+ ts.getComponentName()
+												+ " = "
+												+ objMap.get(ts
+														.getComponentName())
+												+ "},  { MESSAGE  :  "
+												+ ts.getMessageName()
+												+ " = "
+												+ msgMap.get(ts
+														.getMessageName())
+												+ "}");
+										testStepsThread
+												.set(new ArrayList<TestSteps>());
+										break;
+									} catch (Exception e) {
+
+										Assert.fail(e.getMessage());
+										logger.error(e.getMessage());
+										skipCurrentStep(testCaseName);
+										testStepsThread
+												.set(new ArrayList<TestSteps>());
+										break;
+									}
+								}
+
+							}
+						}
+
+					}
+				}
+			}
+
+		} catch (Exception e) {
+			Assert.fail(e.getMessage());
+			logger.error(e.getMessage());
+			skipCurrentStep(testCaseName);
+		}
+
+	}
+
+	public void skipCurrentStep(String testCaseName) {
+		try {
+			captureScreen(screenCapturePath + File.separator + testCaseName);
+			pauseExecution("2000");
+			selenium.get(Thread.currentThread()).windowFocus();
+			if (elementExists("//div[@id='links']/a[@href='/core_qda/logout.jsp']")) {
+				click("//div[@id='links']/a[@href='/core_qda/logout.jsp']");
+			}
+
+		} catch (Exception e) {
+			logger.error(" Error While Skipping Test " + e.getMessage());
+		}
+
+	}
+}

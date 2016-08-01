@@ -1,0 +1,40 @@
+package automation.script;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.testng.annotations.DataProvider;
+import org.apache.log4j.Logger;
+
+public class Test2 {
+	
+	
+@DataProvider
+public Iterator<Object[]> testCases() throws Exception {
+	logger.info("  ############################################################  ");
+	logger.info("  ACTUAL EXECUTION OF TEST CASES STARTS FROM HERE  ");
+	logger.info("  ############################################################  ");
+	List<Object[]> data = new ArrayList<Object[]>();
+	try {
+
+		List<String> list =      //xmlParser.getTestsToExecute(testCasesFile);
+
+		for (String line : list) {
+			data.add(new Object[] { line });
+		}
+
+	} catch (Exception e) {
+		// Assert.fail("Loading of Test Cases Skipped.");
+	}
+
+	return data.iterator();
+}
+
+
+
+
+@Test
+
+
+}
